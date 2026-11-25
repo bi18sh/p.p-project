@@ -7,13 +7,11 @@
 <title>IT Professionals × OptiTic | التقنيات الناشئة والابتكار الرقمي</title>
 <meta name="description" content="الموقع التعريفي والتوثيقي لمشروع فريق IT Professionals لتمثيل شركة OptiTic في مؤتمر ICTI-AFB 2026: التقنيات الناشئة، الابتكار الرقمي، إدارة المشروع، العمل الجماعي والمهارات المهنية.">
 <meta name="theme-color" content="#080F1E">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='16 16 168 168'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='.2' x2='1' y2='.8'%3E%3Cstop offset='0' stop-color='%2329A8F5'/%3E%3Cstop offset='.5' stop-color='%233B34D6'/%3E%3Cstop offset='1' stop-color='%239B2FD0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='16' y='16' width='168' height='168' rx='36' fill='%23080F1E'/%3E%3Crect x='25' y='38' width='150' height='124' rx='60' fill='%238FA6FF' opacity='.28' transform='rotate(18 100 100)'/%3E%3Crect x='34' y='29' width='132' height='142' rx='62' fill='%23B57BE8' opacity='.24' transform='rotate(-24 100 100)'/%3E%3Crect x='42' y='42' width='116' height='116' rx='34' fill='none' stroke='url(%23g)' stroke-width='8'/%3E%3Cg stroke='url(%23g)' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpath d='M70 82V138'/%3E%3Cpath d='M68 70H124'/%3E%3Cpath d='M92 76V134'/%3E%3Cpath d='M112 96V138'/%3E%3Cpath d='M112 96h8a11 11 0 0 1 0 22h-8'/%3E%3C/g%3E%3Cg fill='url(%23g)'%3E%3Ccircle cx='132' cy='70' r='6.5'/%3E%3Ccircle cx='92' cy='142' r='6.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='34 34 132 132'%3E%3Cdefs%3E%3ClinearGradient id='f' x1='0' y1='.15' x2='1' y2='.85'%3E%3Cstop offset='0' stop-color='%234FC3FF'/%3E%3Cstop offset='.5' stop-color='%237C8CFF'/%3E%3Cstop offset='1' stop-color='%23C77DFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='42' y='42' width='116' height='116' rx='34' fill='none' stroke='url(%23f)' stroke-width='10'/%3E%3Cg stroke='url(%23f)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpath d='M68 82V138'/%3E%3Cpath d='M66 68H124'/%3E%3Cpath d='M92 74V132'/%3E%3Cpath d='M114 96V138'/%3E%3Cpath d='M114 96h4a9 9 0 0 1 0 18h-4'/%3E%3C/g%3E%3Cg fill='url(%23f)'%3E%3Ccircle cx='132' cy='68' r='7'/%3E%3Ccircle cx='92' cy='142' r='7'/%3E%3C/g%3E%3C/svg%3E">
 <style>
 /* ═══════════════════════════════════════════════════════════
    IT Professionals — Design System
-   Pattern : Hero-Centric + Bento Grid + Progressive Disclosure
-   Style   : Bento / Dark-Mode / restrained glass / editorial hairlines
-   RTL     : full — logical properties throughout
+   Logo: ITP lettermark · theme-aware gradient · fully opaque letters
    ═══════════════════════════════════════════════════════════ */
 
 @font-face{font-family:Cairo;font-weight:700;font-display:swap;src:url(https://cdn.jsdelivr.net/fontsource/fonts/cairo@latest/arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-0891,U+0898-08FF,U+200C-2011,U+FB50-FDFF,U+FE70-FEFC}
@@ -40,6 +38,10 @@
   --ok:var(--h7);--warn:var(--h6);--danger:var(--h8);--info:var(--h1);
   --tint:rgba(76,210,245,.10);--chip:rgba(38,58,85,.40);--hair:rgba(147,165,189,.16);
   --grid-line:rgba(38,58,85,.55);--glass:rgba(17,30,51,.88);
+  /* ── الشعار: تدرّج مضيء مخصّص للخلفية الداكنة — تباين ≥ 5:1 ── */
+  --logo-a:#4FC3FF;--logo-b:#7C8CFF;--logo-c:#C77DFF;
+  --logo-blob-a:#5B8CFF;--logo-blob-b:#B47BF0;--logo-blob-op:.16;
+  --logo-plate:transparent;
   --sh-1:0 10px 26px -16px rgba(0,0,0,.85);--sh-2:0 28px 60px -26px rgba(0,0,0,.92);--sh-3:0 44px 90px -34px rgba(0,0,0,.95);
   --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;
   --r1:10px;--r2:14px;--r3:20px;--r4:28px;--rp:999px;
@@ -61,6 +63,9 @@ html[data-theme=light]{
   --color-primary:var(--h1);--color-on-primary:#FFFFFF;--color-accent:var(--h6);
   --tint:rgba(10,110,140,.075);--chip:rgba(10,20,37,.05);--hair:rgba(86,106,133,.20);
   --grid-line:rgba(120,145,175,.22);--glass:rgba(255,255,255,.93);
+  /* ── الشعار: نفس الهوية بعمق أكبر لضمان التباين على الفاتح ── */
+  --logo-a:#1189E0;--logo-b:#3A32CE;--logo-c:#8E24C4;
+  --logo-blob-a:#3A32CE;--logo-blob-b:#8E24C4;--logo-blob-op:.14;
   --sh-1:0 10px 24px -18px rgba(20,40,70,.32);--sh-2:0 26px 54px -26px rgba(20,40,70,.30);--sh-3:0 40px 80px -34px rgba(20,40,70,.32);
   --grain:.022;
 }
@@ -91,7 +96,7 @@ img,svg{max-width:100%;display:block}
 *{scrollbar-width:thin;scrollbar-color:var(--h1) var(--color-surface)}
 ::-webkit-scrollbar{width:12px;height:12px}
 ::-webkit-scrollbar-track{background:var(--color-surface);border-radius:99px}
-::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--h1),var(--h4));border:3px solid var(--color-surface);border-radius:99px}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--logo-a),var(--logo-c));border:3px solid var(--color-surface);border-radius:99px}
 ::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--h5),var(--h6))}
 ::-webkit-scrollbar-corner{background:var(--color-surface)}
 
@@ -178,17 +183,18 @@ strong{color:var(--color-foreground);font-weight:700}
 .rv{opacity:0;transform:translateY(22px);transition:opacity var(--d-enter) var(--e-out),transform var(--d-enter) var(--e-out)}
 .rv.in{opacity:1;transform:none}
 
-.progress{position:fixed;top:0;inset-inline:0;height:3px;z-index:130;background:linear-gradient(90deg,var(--h1),var(--h3),var(--h4),var(--h6));transform:scaleX(0);transform-origin:var(--po,right) center;pointer-events:none}
+.progress{position:fixed;top:0;inset-inline:0;height:3px;z-index:130;background:linear-gradient(90deg,var(--logo-a),var(--logo-b),var(--logo-c),var(--h6));transform:scaleX(0);transform-origin:var(--po,right) center;pointer-events:none}
 [dir=ltr] .progress{--po:left}
 .hdr{position:sticky;top:0;z-index:110;background:color-mix(in srgb,var(--color-background) 84%,transparent);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);border-bottom:1px solid var(--color-border);padding-top:var(--sat)}
-.hdr::after{content:"";position:absolute;inset-inline:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--h1),var(--h4),transparent);opacity:.7}
+.hdr::after{content:"";position:absolute;inset-inline:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--logo-a),var(--logo-c),transparent);opacity:.7;pointer-events:none}
 .hdr-in{display:flex;align-items:center;gap:var(--s3);min-height:var(--head)}
 .brand{display:flex;align-items:center;gap:var(--s3);color:var(--color-foreground);flex:none;min-width:0}
 .brand:hover{color:var(--color-foreground)}
-/* الشعار: حاوية مربعة + SVG بلا قصّ وبلا تشويه */
-.mark{width:clamp(44px,9.6vw,54px);height:clamp(44px,9.6vw,54px);flex:none;display:block;overflow:visible}
-.mark svg{width:100%;height:100%;display:block;overflow:visible}
-.mark img{width:100%;height:100%;object-fit:contain;display:block}
+/* ═══ الشعار: لا قصّ · لا تشويه · لا طبقات فوق الحروف ═══ */
+.mark{width:clamp(46px,10vw,56px);height:clamp(46px,10vw,56px);flex:none;display:block;overflow:visible;isolation:isolate}
+.mark svg{width:100%;height:100%;display:block;overflow:visible;opacity:1;filter:none;mix-blend-mode:normal;-webkit-mask:none;mask:none}
+.mark img{width:100%;height:100%;object-fit:contain;display:block;opacity:1;filter:none;mix-blend-mode:normal}
+.mark::before,.mark::after{content:none!important;display:none!important}
 .btxt{display:flex;flex-direction:column;line-height:1.2;min-width:0}
 .btxt b{font:900 clamp(.78rem,.7rem + .34vw,.96rem)/1.2 var(--ff-head);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .btxt small{font-size:clamp(.6rem,.56rem + .16vw,.71rem);color:var(--color-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -203,7 +209,7 @@ strong{color:var(--color-foreground);font-weight:700}
 .drop{position:absolute;inset-inline-start:0;top:calc(100% + var(--s3));min-width:246px;background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--color-border);border-radius:var(--r3);padding:var(--s2);box-shadow:var(--sh-2);opacity:0;visibility:hidden;transform:translateY(-10px);transition:opacity var(--d-base) var(--e-out),transform var(--d-base) var(--e-out),visibility var(--d-base);z-index:60}
 .has:hover>.drop,.has:focus-within>.drop,.has.open>.drop{opacity:1;visibility:visible;transform:none}
 .drop a{display:flex;align-items:center;gap:var(--s3);padding:var(--s3) var(--s4);border-radius:var(--r1);color:var(--color-body);font-size:.9rem;font-weight:500;min-height:44px}
-.drop a::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--h2);opacity:.55;flex:none;transition:transform var(--d-fast) var(--e-out)}
+.drop a::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--logo-a);opacity:.6;flex:none;transition:transform var(--d-fast) var(--e-out)}
 .drop a:hover,.drop a[aria-current]{background:var(--tint);color:var(--color-foreground)}
 .drop a:hover::before{transform:scale(1.5);opacity:1}
 .acts{display:flex;align-items:center;gap:var(--s2);margin-inline-start:var(--s2);flex:none}
@@ -217,7 +223,7 @@ strong{color:var(--color-foreground);font-weight:700}
 .lightseg{display:flex;gap:2px;padding:3px;border:1px solid var(--color-border);border-radius:var(--rp);background:var(--chip);flex:none}
 .lightseg button{width:38px;height:38px;border-radius:var(--rp);display:grid;place-items:center;color:var(--color-muted);transition:color var(--d-fast) var(--e-out),background var(--d-fast) var(--e-out)}
 .lightseg button:hover{color:var(--color-foreground)}
-.lightseg button[aria-pressed=true]{background:linear-gradient(130deg,var(--h1),var(--h3));color:var(--color-on-primary);box-shadow:0 6px 16px -9px var(--h1)}
+.lightseg button[aria-pressed=true]{background:linear-gradient(130deg,var(--logo-a),var(--logo-b));color:#04121C;box-shadow:0 6px 16px -9px var(--logo-a)}
 html[data-theme=light] .lightseg button[aria-pressed=true]{background:linear-gradient(130deg,var(--h6),#C08A1E);color:#FFF}
 .setwrap{position:relative}
 .setpanel{position:absolute;inset-inline-end:0;top:calc(100% + var(--s3));width:min(352px,calc(100vw - var(--pad)*2));background:var(--glass);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid var(--color-border);border-radius:var(--r3);padding:var(--s4);box-shadow:var(--sh-2);z-index:120;display:grid;gap:var(--s3);opacity:0;visibility:hidden;transform:translateY(-10px) scale(.98);transition:opacity var(--d-base) var(--e-out),transform var(--d-base) var(--e-out),visibility var(--d-base)}
@@ -230,7 +236,8 @@ html[data-theme=light] .lightseg button[aria-pressed=true]{background:linear-gra
 .seg{display:flex;gap:2px;padding:3px;background:color-mix(in srgb,var(--color-background) 55%,transparent);border:1px solid var(--color-border);border-radius:var(--rp);flex:none}
 .seg button{padding:var(--s2) var(--s3);min-height:38px;border-radius:var(--rp);font:700 .8rem/1 var(--ff-head);color:var(--color-muted);display:flex;align-items:center;gap:var(--s2);transition:color var(--d-fast) var(--e-out),background var(--d-fast) var(--e-out)}
 .seg button:hover{color:var(--color-foreground)}
-.seg button[aria-pressed=true]{background:linear-gradient(120deg,var(--h1),var(--h3));color:var(--color-on-primary)}
+.seg button[aria-pressed=true]{background:linear-gradient(120deg,var(--logo-a),var(--logo-b));color:#04121C}
+html[data-theme=light] .seg button[aria-pressed=true]{color:#FFF}
 .seg button .ico{width:1rem;height:1rem}
 .setfoot{border-top:1px dashed var(--color-border);padding-top:var(--s3);display:flex;justify-content:space-between;align-items:center;gap:var(--s2);font-size:.72rem;color:var(--color-muted);flex-wrap:wrap}
 .kbd{font:700 .7rem/1 var(--ff-num);border:1px solid var(--color-border);border-radius:6px;padding:5px 7px;background:var(--chip);color:var(--color-muted)}
@@ -253,7 +260,7 @@ html[data-theme=light] .lightseg button[aria-pressed=true]{background:linear-gra
 .dgrp[open]>summary::after{content:"−"}
 .dgrp>div{display:grid;padding:0 var(--s2) var(--s2)}
 .dgrp>div a{display:flex;align-items:center;gap:var(--s3);padding:var(--s3);border-radius:var(--r1);color:var(--color-body);font-size:.9rem;min-height:46px}
-.dgrp>div a::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--h2);opacity:.6;flex:none}
+.dgrp>div a::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--logo-a);opacity:.65;flex:none}
 .dgrp>div a:hover,.dgrp>div a[aria-current]{background:var(--tint);color:var(--color-foreground)}
 .dfoot{padding:var(--s3) var(--s4);border-top:1px solid var(--color-border);display:grid;gap:var(--s2)}
 .dactions{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2);padding:var(--s2) var(--s3) 0}
@@ -278,10 +285,9 @@ html[data-theme=light] .lightseg button[aria-pressed=true]{background:linear-gra
 .mempty{padding:var(--s6);text-align:center;color:var(--color-muted);font-size:.9rem}
 .mfoot{border-top:1px solid var(--color-border);padding:var(--s3) var(--s4);display:flex;gap:var(--s3);flex-wrap:wrap;font-size:.72rem;color:var(--color-muted);align-items:center}
 
-/* نافذة التواصل */
 .cbox{width:min(560px,100%);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--r4);box-shadow:var(--sh-3);overflow:hidden;animation:pop var(--d-slow) var(--e-spring) both}
 .chead{display:flex;align-items:center;gap:var(--s3);padding:var(--s4);border-bottom:1px solid var(--color-border);background:linear-gradient(120deg,color-mix(in srgb,var(--h5) 12%,transparent),color-mix(in srgb,var(--h4) 10%,transparent))}
-.chead .mark{width:46px;height:46px}
+.chead .mark{width:48px;height:48px}
 .chead h3{margin-inline-end:auto;font-size:1.06rem}
 .chead p{font-size:.78rem;color:var(--color-muted)}
 .cbody{padding:var(--s4);display:grid;gap:var(--s3)}
@@ -310,15 +316,16 @@ html[data-theme=light] .lightseg button[aria-pressed=true]{background:linear-gra
 .vzoom span{font:700 .8rem/1 var(--ff-num);color:var(--color-foreground);min-width:3.6em;text-align:center}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);padding:var(--s3) var(--s5);min-height:48px;border-radius:var(--rp);font:700 .92rem/1.2 var(--ff-head);border:1px solid transparent;cursor:pointer;text-align:center;transition:transform var(--d-fast) var(--e-out),box-shadow var(--d-fast) var(--e-out),background var(--d-fast) var(--e-out),color var(--d-fast) var(--e-out),border-color var(--d-fast) var(--e-out)}
-.btn--p{background:linear-gradient(120deg,var(--h1),var(--h2) 48%,var(--h3));color:var(--color-on-primary);box-shadow:0 14px 30px -18px var(--h2)}
-.btn--p:hover{color:var(--color-on-primary);transform:translateY(-3px);box-shadow:0 22px 40px -18px var(--h2)}
+.btn--p{background:linear-gradient(120deg,var(--logo-a),var(--logo-b) 52%,var(--logo-c));color:#04121C;box-shadow:0 14px 30px -18px var(--logo-a)}
+html[data-theme=light] .btn--p{color:#FFF}
+.btn--p:hover{color:#04121C;transform:translateY(-3px);box-shadow:0 22px 40px -18px var(--logo-a)}
+html[data-theme=light] .btn--p:hover{color:#FFF}
 .btn--a{background:linear-gradient(120deg,var(--h6),color-mix(in srgb,var(--h6) 62%,var(--h8)));color:#1B1204;box-shadow:0 14px 30px -18px var(--h6)}
 html[data-theme=light] .btn--a{color:#FFF}
 .btn--a:hover{transform:translateY(-3px)}
 .btn--c{background:linear-gradient(120deg,var(--h5),color-mix(in srgb,var(--h5) 50%,var(--h2)));color:#04121C;box-shadow:0 14px 30px -18px var(--h5)}
 html[data-theme=light] .btn--c{color:#FFF}
-.btn--c:hover{color:#04121C;transform:translateY(-3px)}
-html[data-theme=light] .btn--c:hover{color:#FFF}
+.btn--c:hover{transform:translateY(-3px)}
 .btn--o{background:var(--chip);border-color:var(--color-border);color:var(--color-foreground)}
 .btn--o:hover{border-color:var(--h1);color:var(--h1);background:var(--tint);transform:translateY(-3px)}
 .btn:active{transform:translateY(0) scale(.985)}
@@ -365,14 +372,14 @@ html[data-theme=light] .btn--c:hover{color:#FFF}
 .bt span{display:block;font-size:.85rem;color:var(--color-muted)}
 .bt--wide{grid-column:span 2}
 .bt--hero{grid-column:span 2;grid-row:span 2;justify-content:flex-end}
-.bt--hero b{font-size:clamp(3.4rem,2rem + 6vw,6.4rem);background:linear-gradient(150deg,var(--h1),var(--h4));-webkit-background-clip:text;background-clip:text;color:transparent}
+.bt--hero b{font-size:clamp(3.4rem,2rem + 6vw,6.4rem);background:linear-gradient(150deg,var(--logo-a),var(--logo-c));-webkit-background-clip:text;background-clip:text;color:transparent}
 .stackviz{display:flex;gap:6px;align-items:flex-end;height:64px;margin-block:var(--s3)}
-.stackviz i{flex:1;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--h1),color-mix(in srgb,var(--h3) 60%,transparent));opacity:.85}
+.stackviz i{flex:1;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--logo-a),color-mix(in srgb,var(--logo-b) 60%,transparent));opacity:.9}
 
 .hero{position:relative;padding-block:clamp(40px,6vw,88px) clamp(32px,4vw,64px);overflow:hidden}
 .herogrid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(24px,3.6vw,56px);align-items:center}
-.lockup{display:inline-flex;align-items:center;gap:var(--s3);padding:var(--s2) var(--s5) var(--s2) var(--s2);border:1px solid color-mix(in srgb,var(--h2) 34%,var(--color-border));border-radius:var(--rp);background:color-mix(in srgb,var(--h2) 8%,transparent);max-width:100%}
-.lockup .mark{width:clamp(50px,10vw,60px);height:clamp(50px,10vw,60px)}
+.lockup{display:inline-flex;align-items:center;gap:var(--s3);padding:var(--s2) var(--s5) var(--s2) var(--s2);border:1px solid color-mix(in srgb,var(--logo-a) 34%,var(--color-border));border-radius:var(--rp);background:color-mix(in srgb,var(--logo-a) 8%,transparent);max-width:100%}
+.lockup .mark{width:clamp(54px,11vw,66px);height:clamp(54px,11vw,66px)}
 .lockup .lk{display:flex;flex-direction:column;line-height:1.18;min-width:0}
 .lockup .lk b{font:900 clamp(.86rem,.78rem + .38vw,1.06rem)/1.15 var(--ff-head);color:var(--color-foreground);white-space:nowrap}
 .lockup .lk small{font:700 clamp(.6rem,.56rem + .2vw,.72rem)/1.4 var(--ff-num);color:var(--h1);letter-spacing:.14em}
@@ -384,9 +391,9 @@ html[data-theme=light] .btn--c:hover{color:#FFF}
 .hstats div:last-child{border-inline-end:0}
 .hstats b{display:block;font:700 clamp(1.3rem,1.1rem + .8vw,1.9rem)/1 var(--ff-num);color:var(--h1)}
 .hstats span{display:block;font-size:.73rem;color:var(--color-muted);margin-top:var(--s1)}
-.orb{position:absolute;border-radius:50%;filter:blur(64px);opacity:.4;pointer-events:none;z-index:0;will-change:transform}
-.o1{width:min(340px,62vw);height:min(340px,62vw);background:var(--h2);inset-inline-end:-70px;top:-80px;animation:drift 19s ease-in-out infinite}
-.o2{width:min(280px,54vw);height:min(280px,54vw);background:var(--h4);inset-inline-start:-80px;bottom:-70px;animation:drift 24s ease-in-out infinite reverse}
+.orb{position:absolute;border-radius:50%;filter:blur(64px);opacity:.38;pointer-events:none;z-index:0;will-change:transform}
+.o1{width:min(340px,62vw);height:min(340px,62vw);background:var(--logo-a);inset-inline-end:-70px;top:-80px;animation:drift 19s ease-in-out infinite}
+.o2{width:min(280px,54vw);height:min(280px,54vw);background:var(--logo-c);inset-inline-start:-80px;bottom:-70px;animation:drift 24s ease-in-out infinite reverse}
 .o3{width:min(200px,42vw);height:min(200px,42vw);background:var(--h5);inset-inline-start:44%;top:34%;animation:drift 28s ease-in-out infinite}
 .ticker{position:relative;overflow:hidden;border-block:1px solid var(--color-border);background:color-mix(in srgb,var(--color-surface) 60%,transparent);padding-block:var(--s3);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .ticker-track{display:flex;gap:var(--s6);width:max-content;animation:marq 34s linear infinite}
@@ -451,19 +458,19 @@ html[data-theme=light] .btn--c:hover{color:#FFF}
 .posterframe .posterwrap{transform:rotateY(var(--ry,-8deg)) rotateX(3deg);animation:bob 10s ease-in-out infinite}
 [dir=ltr] .posterframe .posterwrap{--ry:8deg}
 .posterframe:hover .posterwrap{transform:rotateY(0) rotateX(0) scale(1.02)}
-.posterbadge{position:absolute;inset-inline-start:-8px;top:-18px;z-index:3;display:flex;align-items:center;gap:var(--s2);background:var(--glass);border:1px solid var(--color-border);border-radius:var(--rp);padding:5px var(--s3) 5px 5px;font:700 .72rem/1 var(--ff-head);color:var(--color-foreground);box-shadow:var(--sh-1);backdrop-filter:blur(10px);max-width:94%}
-.posterbadge .mark{width:26px;height:26px}
+.posterbadge{position:absolute;inset-inline-start:-8px;top:-20px;z-index:3;display:flex;align-items:center;gap:var(--s2);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--rp);padding:5px var(--s3) 5px 5px;font:700 .72rem/1 var(--ff-head);color:var(--color-foreground);box-shadow:var(--sh-1);max-width:94%}
+.posterbadge .mark{width:28px;height:28px}
 .posteract{display:flex;gap:var(--s2);flex-wrap:wrap;justify-content:center;margin-top:var(--s4)}
 .openbtn{position:absolute;inset:auto 0 0;z-index:3;display:flex;align-items:center;justify-content:center;gap:var(--s2);padding:var(--s4) var(--s4) var(--s3);background:linear-gradient(0deg,rgba(3,13,34,.95),rgba(3,13,34,0));color:#EAF4FF;font:700 .84rem/1 var(--ff-head);opacity:0;transition:opacity var(--d-base) var(--e-out);border-radius:0 0 var(--r3) var(--r3);min-height:52px}
 .posterwrap:hover .openbtn,.posterwrap:focus-within .openbtn{opacity:1}
 @media (hover:none){.openbtn{opacity:1}}
-.floatchip{position:absolute;z-index:3;display:flex;align-items:center;gap:var(--s2);background:var(--glass);border:1px solid var(--color-border);border-radius:var(--rp);padding:var(--s2) var(--s3);font:700 .72rem/1 var(--ff-num);color:var(--color-foreground);box-shadow:var(--sh-1);backdrop-filter:blur(10px);animation:bob 7s ease-in-out infinite}
+.floatchip{position:absolute;z-index:3;display:flex;align-items:center;gap:var(--s2);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--rp);padding:var(--s2) var(--s3);font:700 .72rem/1 var(--ff-num);color:var(--color-foreground);box-shadow:var(--sh-1);animation:bob 7s ease-in-out infinite}
 .floatchip .ico{width:1rem;height:1rem;color:var(--h1)}
 .fc1{inset-inline-end:-10px;top:22%;animation-delay:-2s}
 .fc2{inset-inline-start:-14px;bottom:20%;animation-delay:-4s}
 
 .phero{position:relative;padding-block:clamp(28px,4vw,56px) clamp(20px,2.6vw,36px);border-bottom:1px solid var(--color-border);overflow:hidden;--c:var(--h1)}
-.phero::before{content:"";position:absolute;inset-inline-end:-10%;top:-80%;width:min(560px,92vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 24%,transparent),transparent 66%);filter:blur(30px);pointer-events:none}
+.phero::before{content:"";position:absolute;inset-inline-end:-10%;top:-80%;width:min(560px,92vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 22%,transparent),transparent 66%);filter:blur(30px);pointer-events:none}
 .crumbs{margin-bottom:var(--s4)}
 .crumbs ol{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2);font-size:.8rem;color:var(--color-muted)}
 .crumbs li+li::before{content:"‹";margin-inline-end:var(--s2);color:var(--color-border)}
@@ -476,11 +483,12 @@ html[data-theme=light] .btn--c:hover{color:#FFF}
 .ptools{display:flex;gap:var(--s2);margin-inline-start:auto}
 
 .member{--c:var(--h1);background:linear-gradient(165deg,var(--color-surface-2),var(--color-surface));border:1px solid var(--color-border);border-radius:var(--r4);padding:clamp(16px,1.9vw,26px);position:relative;overflow:hidden;transition:transform var(--d-base) var(--e-out),border-color var(--d-base) var(--e-out),box-shadow var(--d-base) var(--e-out)}
-.member::after{content:"";position:absolute;inset-inline-end:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 20%,transparent),transparent 70%);pointer-events:none}
+.member::after{content:"";position:absolute;inset-inline-end:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 18%,transparent),transparent 70%);pointer-events:none}
 .member:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--c) 48%,var(--color-border));box-shadow:var(--sh-2)}
 .member>*{position:relative;z-index:1}
 .mhead{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s3);flex-wrap:wrap}
-.av{width:clamp(50px,11vw,62px);height:clamp(50px,11vw,62px);flex:none;border-radius:var(--r3);display:grid;place-items:center;font:700 clamp(1rem,.9rem + .5vw,1.2rem)/1 var(--ff-num);color:#FFF;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 45%,var(--h4)));box-shadow:0 12px 26px -14px var(--c)}
+.av{width:clamp(50px,11vw,62px);height:clamp(50px,11vw,62px);flex:none;border-radius:var(--r3);display:grid;place-items:center;font:700 clamp(1rem,.9rem + .5vw,1.2rem)/1 var(--ff-num);color:#04121C;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 45%,var(--h4)))}
+html[data-theme=light] .av{color:#FFF}
 .mname{font:900 clamp(1.05rem,.98rem + .4vw,1.22rem)/1.3 var(--ff-head);color:var(--color-foreground)}
 .midx{font:700 .71rem/1 var(--ff-num);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 40%,transparent);padding:5px var(--s2);border-radius:var(--rp);display:inline-block;margin-bottom:var(--s2);letter-spacing:.08em}
 .mrole{font-weight:700;color:var(--color-foreground);font-size:.95rem;margin-bottom:var(--s1)}
@@ -508,16 +516,17 @@ html[data-theme=light] .btn--c:hover{color:#FFF}
 .lead-node b{color:var(--color-accent)}
 .stem{width:2px;height:30px;margin-inline:auto;background:linear-gradient(180deg,var(--h6),var(--color-border))}
 .orgrow{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s3);position:relative;padding-top:30px}
-.orgrow::before{content:"";position:absolute;top:0;inset-inline:10%;height:2px;background:linear-gradient(90deg,var(--color-border),var(--h2),var(--color-border))}
+.orgrow::before{content:"";position:absolute;top:0;inset-inline:10%;height:2px;background:linear-gradient(90deg,var(--color-border),var(--logo-a),var(--color-border))}
 .orgrow .node::before{content:"";position:absolute;top:-30px;inset-inline-start:50%;width:2px;height:30px;background:var(--color-border)}
-.orgrow .node::after{content:"";position:absolute;top:-5px;inset-inline-start:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--h2)}
+.orgrow .node::after{content:"";position:absolute;top:-5px;inset-inline-start:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--logo-a)}
 .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:var(--s5)}
 .fstep{--c:var(--h1);position:relative;background:linear-gradient(160deg,var(--color-surface-2),var(--color-surface));border:1px solid var(--color-border);border-radius:var(--r3);padding:var(--s4);transition:transform var(--d-base) var(--e-out),border-color var(--d-base) var(--e-out)}
 .fstep:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--c) 48%,var(--color-border))}
-.fstep::after{content:"←";position:absolute;inset-inline-start:-1.15rem;top:50%;transform:translateY(-50%);color:var(--h2);font-size:1.1rem;font-weight:700}
+.fstep::after{content:"←";position:absolute;inset-inline-start:-1.15rem;top:50%;transform:translateY(-50%);color:var(--logo-a);font-size:1.1rem;font-weight:700}
 [dir=ltr] .fstep::after{content:"→"}
 .fstep:last-child::after{display:none}
-.fn{display:grid;place-items:center;width:32px;height:32px;border-radius:var(--r1);font:700 .9rem/1 var(--ff-num);color:#FFF;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 45%,var(--h4)));margin-bottom:var(--s3)}
+.fn{display:grid;place-items:center;width:32px;height:32px;border-radius:var(--r1);font:700 .9rem/1 var(--ff-num);color:#04121C;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 45%,var(--h4)));margin-bottom:var(--s3)}
+html[data-theme=light] .fn{color:#FFF}
 .fstep b{display:block;font:700 .93rem/1.5 var(--ff-head);color:var(--color-foreground);margin-bottom:var(--s1)}
 .fstep p{font-size:.84rem;line-height:1.7;color:var(--color-body)}
 .fwho{display:inline-block;margin-top:var(--s2);font-size:.74rem;color:var(--color-accent);font-family:var(--ff-num);font-weight:700}
@@ -583,7 +592,7 @@ html[data-theme=light] .mlvl{color:#FFF;background:linear-gradient(140deg,var(--
 .tuck{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s3);align-items:end}
 .tstep{--c:var(--h1);background:linear-gradient(165deg,var(--color-surface-2),var(--color-surface));border:1px solid var(--color-border);border-bottom:4px solid var(--c);border-radius:var(--r3);padding:var(--s4);min-height:calc(130px + var(--i) * 20px);transition:transform var(--d-base) var(--e-out),border-color var(--d-base) var(--e-out)}
 .tstep:hover{transform:translateY(-6px);border-color:var(--c)}
-.tstep .n{font:700 1.5rem/1 var(--ff-num);color:var(--c);opacity:.7}
+.tstep .n{font:700 1.5rem/1 var(--ff-num);color:var(--c);opacity:.75}
 .tstep b{display:block;font:700 .93rem/1.4 var(--ff-head);color:var(--color-foreground);margin:var(--s2) 0 2px}
 .tstep .en{font-size:.73rem;color:var(--c);font-family:var(--ff-num);font-weight:700;display:block;margin-bottom:var(--s2)}
 .tstep p{font-size:.81rem;line-height:1.7;color:var(--color-body)}
@@ -593,7 +602,7 @@ html[data-theme=light] .mlvl{color:#FFF;background:linear-gradient(140deg,var(--
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--color-border);border-radius:var(--r3);background:var(--color-surface);box-shadow:var(--sh-1)}
 table{width:100%;border-collapse:collapse;min-width:520px;font-size:.9rem}
 caption{text-align:start;padding:var(--s3) var(--s4);color:var(--color-muted);font-size:.84rem;border-bottom:1px solid var(--color-border)}
-thead th{background:linear-gradient(180deg,color-mix(in srgb,var(--h2) 16%,transparent),color-mix(in srgb,var(--h2) 5%,transparent));color:var(--color-foreground);font:700 .87rem/1.5 var(--ff-head);padding:var(--s3) var(--s4);text-align:start;border-bottom:1px solid var(--color-border);white-space:nowrap}
+thead th{background:linear-gradient(180deg,color-mix(in srgb,var(--logo-a) 16%,transparent),color-mix(in srgb,var(--logo-a) 5%,transparent));color:var(--color-foreground);font:700 .87rem/1.5 var(--ff-head);padding:var(--s3) var(--s4);text-align:start;border-bottom:1px solid var(--color-border);white-space:nowrap}
 tbody td{padding:var(--s3) var(--s4);border-bottom:1px solid var(--color-border-soft);color:var(--color-body);vertical-align:top}
 tbody th{padding:var(--s3) var(--s4);text-align:start;color:var(--color-foreground);font:700 .9rem/1.6 var(--ff-head);border-bottom:1px solid var(--color-border-soft);background:var(--chip)}
 tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
@@ -603,7 +612,8 @@ tbody tr:hover{background:var(--tint)}
 .filters{display:flex;flex-wrap:wrap;gap:var(--s2);margin-bottom:var(--s5)}
 .filters button{padding:var(--s2) var(--s4);border-radius:var(--rp);border:1px solid var(--color-border);background:var(--chip);color:var(--color-muted);font:700 .84rem/1.4 var(--ff-head);min-height:44px;transition:color var(--d-fast) var(--e-out),background var(--d-fast) var(--e-out),border-color var(--d-fast) var(--e-out)}
 .filters button:hover{border-color:var(--h1);color:var(--color-foreground)}
-.filters button[aria-pressed=true]{background:linear-gradient(120deg,var(--h1),var(--h3));color:var(--color-on-primary);border-color:transparent}
+.filters button[aria-pressed=true]{background:linear-gradient(120deg,var(--logo-a),var(--logo-b));color:#04121C;border-color:transparent}
+html[data-theme=light] .filters button[aria-pressed=true]{color:#FFF}
 .work{display:flex;flex-direction:column;gap:var(--s2)}
 .wtop{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--s2)}
 .wmeta{display:grid;gap:3px;font-size:.8rem;color:var(--color-muted);border-top:1px dashed var(--color-border);padding-top:var(--s2);margin-top:auto}
@@ -613,12 +623,12 @@ tbody tr:hover{background:var(--tint)}
 .slide>*{position:relative}
 .stag{font:700 .62rem/1 var(--ff-num);color:var(--color-accent);letter-spacing:.08em}
 .slide h4{font-size:clamp(.78rem,1.3vw,.96rem);line-height:1.4}
-.srule{height:2px;width:44%;background:linear-gradient(90deg,var(--h1),transparent);border-radius:2px}
+.srule{height:2px;width:44%;background:linear-gradient(90deg,var(--logo-a),transparent);border-radius:2px}
 .slines{display:grid;gap:5px;margin-top:auto}
 .slines i{display:block;height:5px;border-radius:3px;background:color-mix(in srgb,var(--color-muted) 26%,transparent)}
 .slines i:nth-child(1){width:92%}.slines i:nth-child(2){width:74%}.slines i:nth-child(3){width:83%}
 .sbars{display:flex;align-items:flex-end;gap:5px;height:32px;margin-top:auto}
-.sbars i{flex:1;border-radius:3px 3px 0 0;background:linear-gradient(180deg,var(--h1),color-mix(in srgb,var(--h4) 35%,transparent))}
+.sbars i{flex:1;border-radius:3px 3px 0 0;background:linear-gradient(180deg,var(--logo-a),color-mix(in srgb,var(--logo-c) 35%,transparent))}
 .gallery{display:flex;gap:var(--s4);overflow-x:auto;-webkit-overflow-scrolling:touch;padding:var(--s1) 2px var(--s4);scroll-snap-type:x mandatory}
 .gallery>figure{flex:0 0 min(320px,80vw);scroll-snap-align:start;display:grid;gap:var(--s2)}
 .gallery figcaption{font-size:.81rem;color:var(--color-muted);display:flex;justify-content:space-between;align-items:center;gap:var(--s2)}
@@ -627,21 +637,36 @@ tbody tr:hover{background:var(--tint)}
 .logoStage{display:grid;place-items:center;padding:clamp(18px,3vw,34px);border-radius:var(--r3);border:1px solid var(--color-border);background:#fff;transition:background var(--d-base) var(--e-out)}
 .logoStage.onDark{background:#080F1E}
 .logoStage svg{width:min(100%,300px);height:auto;overflow:visible}
-.logoStage img{width:min(100%,300px);height:auto}
+.logoStage img{width:min(100%,300px);height:auto;object-fit:contain}
 .uploadrow{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
 .filebtn{position:relative;overflow:hidden}
 .filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:200px}
 .assetnote{font-size:.79rem;color:var(--color-muted)}
 .badgeOrig{display:inline-flex;align-items:center;gap:var(--s1);font:700 .71rem/1 var(--ff-head);color:var(--ok);border:1px solid color-mix(in srgb,var(--ok) 42%,transparent);background:color-mix(in srgb,var(--ok) 12%,transparent);padding:5px var(--s2);border-radius:var(--rp)}
+/* مختبر الشعار: معاينة حيّة على الخلفيتين وبالمقاسات الصغيرة */
+.logolab{display:grid;gap:var(--s3)}
+.ll-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.ll-cell{border:1px solid var(--color-border);border-radius:var(--r3);padding:var(--s4);display:grid;place-items:center;gap:var(--s3);min-height:150px}
+.ll-cell.dark{background:#080F1E}
+.ll-cell.black{background:#000}
+.ll-cell.light{background:#FFF}
+.ll-cell.tint{background:#F2F5FA}
+.ll-cell small{font:700 .68rem/1 var(--ff-num);letter-spacing:.1em}
+.ll-cell.dark small,.ll-cell.black small{color:#93A5BD}
+.ll-cell.light small,.ll-cell.tint small{color:#566A85}
+.ll-sizes{display:flex;align-items:flex-end;justify-content:center;gap:var(--s5);flex-wrap:wrap;border:1px solid var(--color-border);border-radius:var(--r3);padding:var(--s4);background:var(--color-surface-2)}
+.ll-size{display:grid;justify-items:center;gap:var(--s2)}
+.ll-size .mark{width:var(--sz);height:var(--sz)}
+.ll-size small{font:700 .68rem/1 var(--ff-num);color:var(--color-muted)}
 
-/* بطاقات التواصل الكبيرة */
 .contactgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:clamp(12px,1.5vw,20px)}
 .ccard{--c:var(--h1);position:relative;display:flex;flex-direction:column;gap:var(--s3);padding:clamp(18px,2vw,26px);border:1px solid var(--color-border);border-radius:var(--r4);background:linear-gradient(158deg,var(--color-surface-2),var(--color-surface));box-shadow:var(--sh-1);overflow:hidden;transition:transform var(--d-base) var(--e-out),border-color var(--d-base) var(--e-out),box-shadow var(--d-base) var(--e-out)}
-.ccard::after{content:"";position:absolute;inset-inline-end:-30%;top:-45%;width:75%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 22%,transparent),transparent 68%);pointer-events:none}
+.ccard::after{content:"";position:absolute;inset-inline-end:-30%;top:-45%;width:75%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 20%,transparent),transparent 68%);pointer-events:none}
 .ccard:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--c) 50%,var(--color-border));box-shadow:var(--sh-2)}
 .ccard>*{position:relative;z-index:1}
-.ccard-ico{width:54px;height:54px;border-radius:var(--r3);display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 50%,var(--h4)));box-shadow:0 12px 26px -14px var(--c)}
-.ccard--ig .ccard-ico{background:linear-gradient(135deg,var(--ig-a) 0%,var(--ig-b) 52%,var(--ig-c) 100%);box-shadow:0 12px 26px -14px var(--ig-b)}
+.ccard-ico{width:54px;height:54px;border-radius:var(--r3);display:grid;place-items:center;color:#04121C;background:linear-gradient(145deg,var(--c),color-mix(in srgb,var(--c) 50%,var(--h4)))}
+html[data-theme=light] .ccard-ico{color:#FFF}
+.ccard--ig .ccard-ico{background:linear-gradient(135deg,var(--ig-a) 0%,var(--ig-b) 52%,var(--ig-c) 100%);color:#FFF}
 .ccard-ico .ico{width:1.6rem;height:1.6rem}
 .ccard small{display:block;font-size:.76rem;color:var(--color-muted);letter-spacing:.04em}
 .ccard b{display:block;font:700 clamp(1.02rem,.96rem + .4vw,1.24rem)/1.4 var(--ff-num);color:var(--color-foreground);direction:ltr;unicode-bidi:isolate;text-align:start;overflow-wrap:anywhere}
@@ -659,10 +684,10 @@ tbody tr:hover{background:var(--tint)}
 .faq .a{padding:var(--s3) 0 var(--s4);margin-inline:var(--s4);color:var(--color-body);border-top:1px dashed var(--color-border)}
 
 .ftr{position:relative;z-index:1;margin-top:clamp(32px,4vw,64px);background:linear-gradient(180deg,color-mix(in srgb,var(--color-surface) 60%,transparent),var(--color-surface));border-top:1px solid var(--color-border);padding-top:clamp(32px,3.4vw,56px)}
-.ftr::before{content:"";position:absolute;inset-inline:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--h1),var(--h4),var(--h6),transparent)}
+.ftr::before{content:"";position:absolute;inset-inline:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--logo-a),var(--logo-c),var(--h6),transparent)}
 .fgrid{display:grid;grid-template-columns:1.5fr repeat(3,1fr) 1.3fr 1.2fr;gap:var(--s5);padding-bottom:var(--s6)}
 .fcol h3{font-size:.92rem;margin-bottom:var(--s3);position:relative;padding-bottom:var(--s2)}
-.fcol h3::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:30px;height:2px;background:linear-gradient(90deg,var(--h1),var(--h4));border-radius:2px}
+.fcol h3::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:30px;height:2px;background:linear-gradient(90deg,var(--logo-a),var(--logo-c));border-radius:2px}
 .fcol li{margin-bottom:var(--s1)}
 .fcol a{color:var(--color-muted);font-size:.86rem;display:inline-flex;align-items:center;gap:var(--s2);min-height:34px}
 .fcol a:hover{color:var(--h1)}
@@ -677,8 +702,8 @@ tbody tr:hover{background:var(--tint)}
 .totop{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s4);border-radius:var(--rp);border:1px solid var(--color-border);color:var(--color-muted);font:700 .82rem/1 var(--ff-head);min-height:44px;transition:color var(--d-fast) var(--e-out),border-color var(--d-fast) var(--e-out),background var(--d-fast) var(--e-out)}
 .totop:hover{border-color:var(--h1);color:var(--h1);background:var(--tint)}
 .bigmark{display:flex;align-items:center;justify-content:center;gap:var(--s5);padding-bottom:var(--s5);flex-wrap:wrap}
-.bigmark .mark{width:clamp(64px,12vw,104px);height:clamp(64px,12vw,104px)}
-.bigmark span{font:900 clamp(1.6rem,1rem + 5vw,4.4rem)/1 var(--ff-head);letter-spacing:-.03em;color:color-mix(in srgb,var(--color-muted) 14%,transparent);user-select:none;white-space:nowrap}
+.bigmark .mark{width:clamp(72px,13vw,116px);height:clamp(72px,13vw,116px)}
+.bigmark span{font:900 clamp(1.6rem,1rem + 5vw,4.4rem)/1 var(--ff-head);letter-spacing:-.03em;color:color-mix(in srgb,var(--color-muted) 16%,transparent);user-select:none;white-space:nowrap}
 
 .toasts{position:fixed;inset-block-end:calc(var(--s4) + var(--bar) + var(--sab));inset-inline-end:calc(var(--s4) + var(--sar));z-index:300;display:grid;gap:var(--s2);pointer-events:none}
 .toast{display:flex;align-items:center;gap:var(--s2);background:var(--glass);backdrop-filter:blur(14px);border:1px solid var(--color-border);border-inline-start:3px solid var(--ok);border-radius:var(--r2);padding:var(--s3) var(--s4);box-shadow:var(--sh-2);font:600 .86rem/1.5 var(--ff-body);color:var(--color-foreground);animation:slidein var(--d-slow) var(--e-spring) both;max-width:min(340px,86vw)}
@@ -745,6 +770,7 @@ tbody tr:hover{background:var(--tint)}
   .ptools{margin-inline-start:0}
   .btxt small{display:none}
   .shead{align-items:flex-start}
+  .ll-row{grid-template-columns:1fr}
 }
 @media (max-width:600px){
   .btxt{display:none}
@@ -757,8 +783,7 @@ tbody tr:hover{background:var(--tint)}
   .vbar h3{width:100%;margin-inline-end:0}
   .bento{grid-template-columns:1fr}.bt--hero,.bt--wide{grid-column:span 1}
   .hstats div{flex:1 1 50%;border-block-end:1px solid var(--color-border)}
-  .crow{flex-wrap:wrap}
-  .crow-txt{flex:1 1 140px}
+  .crow{flex-wrap:wrap}.crow-txt{flex:1 1 140px}
 }
 @media (max-width:400px){
   .iconbtn{width:40px;height:40px}
@@ -766,6 +791,7 @@ tbody tr:hover{background:var(--tint)}
   .g5{grid-template-columns:1fr}
   .tabbar a,.tabbar button{font-size:.59rem}
   .dactions{grid-template-columns:1fr}
+  .ll-sizes{gap:var(--s4)}
 }
 @media (max-height:520px) and (orientation:landscape){
   .hero{padding-block:var(--s5)}.posterframe{max-width:220px}
@@ -778,7 +804,7 @@ tbody tr:hover{background:var(--tint)}
   .rv{opacity:1!important;transform:none!important}.ticker-track{animation:none}
 }
 @media print{
-  :root{--color-background:#fff;--color-surface:#fff;--color-surface-2:#fff;--color-foreground:#111827;--color-body:#374151;--color-muted:#4B5563;--color-border:#C7D2DD;--color-border-soft:#DDE5EE;--chip:#F3F6F9;--tint:#E6F4F3;--bar:0px}
+  :root{--color-background:#fff;--color-surface:#fff;--color-surface-2:#fff;--color-foreground:#111827;--color-body:#374151;--color-muted:#4B5563;--color-border:#C7D2DD;--color-border-soft:#DDE5EE;--chip:#F3F6F9;--tint:#E6F4F3;--bar:0px;--logo-a:#1189E0;--logo-b:#3A32CE;--logo-c:#8E24C4;--logo-blob-op:.12}
   @page{margin:14mm}
   body{background:#fff!important;color:#111827!important;font-size:11pt;line-height:1.7}
   body::before,body::after,.orb,.progress,.hdr,.drawer,.scrim,.modal,.viewer,.toasts,.filters,.ptools,.totop,.row,.tabbar,.posteract,.uploadrow,.openbtn,.ticker,.floatchip,.bigmark,.crow-act{display:none!important}
@@ -790,7 +816,7 @@ tbody tr:hover{background:var(--tint)}
   .tw{overflow:visible}table{min-width:0;font-size:9.5pt}
   .gantt{min-width:0}.net{aspect-ratio:auto;display:flex;flex-wrap:wrap;gap:6pt;min-height:0}
   .netlinks{display:none}.nnode{position:static!important;transform:none!important;flex:1 1 30%}
-  .gbar,.mlvl,.pseg,.brochure{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .gbar,.mlvl,.pseg,.brochure,.mark{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .posterframe .posterwrap{transform:none!important;animation:none!important;max-width:300px}
   .fgrid{grid-template-columns:1fr 1fr}
   .printinfo{display:block!important;margin-top:8pt;padding:8pt;border:1px solid #C7D2DD;font-size:9.5pt;color:#374151}
@@ -882,33 +908,61 @@ function L(s){return '<bdi>'+s+'</bdi>';}
 function $(s){return document.querySelector(s);}
 function hit(e,sel){var n=e.target;while(n&&n!==document){if(n.nodeType===1&&n.matches&&n.matches(sel))return n;n=n.parentNode;}return null;}
 
-/* ═════ الشعار — إعادة رسم دقيقة للشعار المرفق (ITP) بلا قصّ ═════
-   فضاء الرسم 200×200؛ مدى العمل 25..175 أفقيًا و28..172 رأسيًا.
-   viewBox المضغوط 16 16 168 168 يحوي كل شيء بهامش — لا انقسام ولا تشويه. */
+/* ══════════════════════════════════════════════════════════════
+   الشعار — ITP lettermark
+   البنية الأصلية محفوظة: إطار مربّع دائري + فقاعتان مائلتان + ITP
+   التحسين: الحروف معتمة تمامًا وتُرسم آخرًا، التدرّج مضيء على الداكن،
+   الطبقات الزخرفية خفيفة وخلف الحروف، ولا قصّ ولا تشويه.
+   فضاء الرسم 200×200 · مدى العمل 25..175 · viewBox مضبوط بلا حواف مبتورة
+   ══════════════════════════════════════════════════════════════ */
+var LOGO_DARK={a:'#4FC3FF',b:'#7C8CFF',c:'#C77DFF',ba:'#5B8CFF',bb:'#B47BF0',op:.16};
+var LOGO_LIGHT={a:'#1189E0',b:'#3A32CE',c:'#8E24C4',ba:'#3A32CE',bb:'#8E24C4',op:.14};
+function pal(mode){return mode==='light'?LOGO_LIGHT:LOGO_DARK;}
 function logoSVG(o){
   o=o||{};
-  var g='lg'+(++uid),b='lb'+(++uid),c='lc'+(++uid),mode=o.lockup,ink=o.ink||'#0A1425';
-  var vb = mode==='stack' ? '0 0 360 300' : mode==='row' ? '0 0 660 200' : (o.tight===false ? '0 0 200 200' : '16 16 168 168');
-  var tx = mode==='stack' ? 80 : 0;
-  var art='<g transform="translate('+tx+',0)">'
-   +'<rect x="25" y="38" width="150" height="124" rx="60" fill="url(#'+b+')" opacity=".30" transform="rotate(18 100 100)"/>'
-   +'<rect x="34" y="29" width="132" height="142" rx="62" fill="url(#'+c+')" opacity=".26" transform="rotate(-24 100 100)"/>'
-   +'<rect x="42" y="42" width="116" height="116" rx="34" fill="none" stroke="url(#'+g+')" stroke-width="8"/>'
-   +'<g stroke="url(#'+g+')" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">'
-   +'<path d="M70 82V138"/><path d="M68 70H124"/><path d="M92 76V134"/><path d="M112 96V138"/>'
-   +'<path d="M112 96h8a11 11 0 0 1 0 22h-8"/></g>'
-   +'<g fill="url(#'+g+')"><circle cx="132" cy="70" r="6.5"/><circle cx="92" cy="142" r="6.5"/></g></g>';
-  var word = mode==='stack'
+  var id='itp'+(++uid),g=id+'g',b1=id+'b1',b2=id+'b2';
+  var small=o.small===true, mode=o.mode||null, P=pal(mode);
+  var live=!mode;                                  /* داخل الصفحة: يتبع السمة تلقائيًا */
+  var A=live?'var(--logo-a,'+LOGO_DARK.a+')':P.a;
+  var B=live?'var(--logo-b,'+LOGO_DARK.b+')':P.b;
+  var C=live?'var(--logo-c,'+LOGO_DARK.c+')':P.c;
+  var BA=live?'var(--logo-blob-a,'+LOGO_DARK.ba+')':P.ba;
+  var BB=live?'var(--logo-blob-b,'+LOGO_DARK.bb+')':P.bb;
+  var OP=live?'var(--logo-blob-op,.16)':P.op;
+  var S=small?10:9, NR=small?7:6.5, PX=small?114:116, PH=small?4:5, PR=small?9:10;
+  var vb = o.lockup==='stack' ? '0 0 360 300'
+         : o.lockup==='row'   ? '0 0 660 200'
+         : small              ? '34 34 132 132'
+         : (o.tight===false   ? '0 0 200 200' : '16 16 168 168');
+  var tx = o.lockup==='stack'?80:0;
+  var ink=o.ink||(mode==='light'?'#0A1425':'#F4F8FF');
+  var defs='<defs><linearGradient id="'+g+'" x1="0" y1=".15" x2="1" y2=".85">'
+    +'<stop offset="0" stop-color="'+A+'"/><stop offset=".5" stop-color="'+B+'"/><stop offset="1" stop-color="'+C+'"/></linearGradient>'
+    +'<linearGradient id="'+b1+'" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="'+BA+'"/><stop offset="1" stop-color="'+BB+'"/></linearGradient>'
+    +'<linearGradient id="'+b2+'" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+BB+'"/><stop offset="1" stop-color="'+BA+'"/></linearGradient></defs>';
+  /* الطبقة 1: هالة زخرفية خفيفة — خلف كل شيء، لا تلمس وضوح الحروف */
+  var aura = small ? '' :
+     '<g opacity="'+OP+'" aria-hidden="true">'
+    +'<rect x="25" y="38" width="150" height="124" rx="60" fill="url(#'+b1+')" transform="rotate(18 100 100)"/>'
+    +'<rect x="34" y="29" width="132" height="142" rx="62" fill="url(#'+b2+')" transform="rotate(-24 100 100)"/></g>';
+  /* الطبقة 2: الإطار المربع الدائري — نفس الهوية */
+  var frame='<rect x="42" y="42" width="116" height="116" rx="34" fill="none" stroke="url(#'+g+')" stroke-width="'+S+'"/>';
+  /* الطبقة 3: حروف ITP معتمة تمامًا فوق كل شيء */
+  var letters='<g stroke="url(#'+g+')" stroke-width="'+S+'" stroke-linecap="round" stroke-linejoin="round" fill="none">'
+    +'<path d="M68 82V138"/>'                                  /* I */
+    +'<path d="M66 68H124"/>'                                  /* T — العارضة */
+    +'<path d="M92 74V132"/>'                                  /* T — الساق */
+    +'<path d="M'+PX+' 96V138"/>'                              /* P — الساق */
+    +'<path d="M'+PX+' 96h'+PH+'a'+PR+' '+PR+' 0 0 1 0 '+(PR*2)+'h-'+PH+'"/></g>'  /* P — الانحناء */
+    +'<g fill="url(#'+g+')"><circle cx="132" cy="68" r="'+NR+'"/><circle cx="92" cy="142" r="'+NR+'"/></g>';
+  var word = o.lockup==='stack'
     ? '<text x="180" y="272" direction="ltr" text-anchor="middle" font-family="Cairo,Tajawal,Arial,sans-serif" font-size="36" font-weight="700" fill="'+ink+'">IT Professionals</text>'
-    : mode==='row'
+    : o.lockup==='row'
     ? '<text x="228" y="120" direction="ltr" font-family="Cairo,Tajawal,Arial,sans-serif" font-size="48" font-weight="700" fill="'+ink+'">IT Professionals</text>' : '';
   return '<svg xmlns="http://www.w3.org/2000/svg" direction="ltr" viewBox="'+vb+'" preserveAspectRatio="xMidYMid meet" role="img" aria-label="'+(LANG==='ar'?'شعار فريق IT Professionals':'IT Professionals team logo')+'">'
-   +'<defs><linearGradient id="'+g+'" x1="0" y1=".2" x2="1" y2=".8"><stop offset="0" stop-color="#29A8F5"/><stop offset=".5" stop-color="#3B34D6"/><stop offset="1" stop-color="#9B2FD0"/></linearGradient>'
-   +'<linearGradient id="'+b+'" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8FA6FF"/><stop offset="1" stop-color="#C4A0FF"/></linearGradient>'
-   +'<linearGradient id="'+c+'" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6EA8FF"/><stop offset="1" stop-color="#B57BE8"/></linearGradient></defs>'
-   +art+word+'</svg>';
+    +defs+'<g transform="translate('+tx+',0)">'+aura+frame+letters+'</g>'+word+'</svg>';
 }
-function markHTML(){return CUSTOM.logo?'<img src="'+CUSTOM.logo+'" alt="">':logoSVG();}
+function markHTML(small){return CUSTOM.logo?'<img src="'+CUSTOM.logo+'" alt="">':logoSVG({small:small});}
 
 /* ═════ بطاقة الدعوة ═════ */
 function hexArt(){var s='',i,j,k,a,cx,cy,r=30,p;
@@ -942,16 +996,16 @@ function brochureHTML(){
   +'<div class="br-org"><i></i><span>ORGANIZED BY OPTITIC</span><i></i></div></div></div>';}
 function posterBlock(badge){
   return '<div class="posterframe"><div class="posterwrap">'
-   +(badge?'<span class="posterbadge"><span class="mark">'+markHTML()+'</span>'+t('بطاقة الدعوة · تصميم Saed','Invitation card · by Saed')+'</span><span class="floatchip fc1">'+ico('cal')+'<span class="num">24 NOV 2026</span></span><span class="floatchip fc2">'+ico('clock')+'<span class="num">15 + 5 min</span></span>':'')
+   +(badge?'<span class="posterbadge"><span class="mark">'+markHTML(true)+'</span>'+t('بطاقة الدعوة · تصميم Saed','Invitation card · by Saed')+'</span><span class="floatchip fc1">'+ico('cal')+'<span class="num">24 NOV 2026</span></span><span class="floatchip fc2">'+ico('clock')+'<span class="num">15 + 5 min</span></span>':'')
    +brochureHTML()+'<button class="openbtn" type="button" data-open="brochure">'+ico('expand')+t('اضغط لفتح البطاقة','Click to open the card')+'</button>'
    +'</div><div class="posteract"><button class="btn btn--p btn--sm" type="button" data-open="brochure">'+ico('expand')+t('افتح بطاقة الدعوة','Open invitation card')+'</button>'
    +'<button class="btn btn--o btn--sm" type="button" data-dl="brochure-png">'+ico('down')+t('تحميل PNG','Download PNG')+'</button></div></div>';}
 
 /* ═════ قنوات التواصل ═════ */
 var CONTACT=[
- {k:'phone',c:'var(--h5)',icon:'phone',ar:'رقم الهاتف',en:'Phone',value:'0780927463',href:'tel:+962780927463',copy:'0780927463',actAr:'اتصال',actEn:'Call'},
- {k:'email',c:'var(--h2)',icon:'mail',ar:'البريد الإلكتروني',en:'Email',value:'mnbisher@gmail.com',href:'mailto:mnbisher@gmail.com',copy:'mnbisher@gmail.com',actAr:'مراسلة',actEn:'Email'},
- {k:'instagram',c:'var(--h4)',icon:'instagram',ar:'إنستغرام',en:'Instagram',value:'bi_18_11',href:'https://www.instagram.com/bi_18_11/',copy:'bi_18_11',actAr:'زيارة',actEn:'Open',ext:true}
+ {k:'phone',c:'var(--h5)',icon:'phone',ar:'رقم الهاتف',en:'Phone',value:'0780927463',href:'tel:+962780927463',actAr:'اتصال',actEn:'Call'},
+ {k:'email',c:'var(--h2)',icon:'mail',ar:'البريد الإلكتروني',en:'Email',value:'mnbisher@gmail.com',href:'mailto:mnbisher@gmail.com',actAr:'مراسلة',actEn:'Email'},
+ {k:'instagram',c:'var(--h4)',icon:'instagram',ar:'إنستغرام',en:'Instagram',value:'bi_18_11',href:'https://www.instagram.com/bi_18_11/',actAr:'زيارة',actEn:'Open',ext:true}
 ];
 function contactRows(){
   return CONTACT.map(function(c){
@@ -959,22 +1013,19 @@ function contactRows(){
      +'<span class="crow-ico">'+ico(c.icon,'lg')+'</span>'
      +'<span class="crow-txt"><small>'+t(c.ar,c.en)+'</small><b>'+c.value+'</b></span>'
      +'<span class="crow-act"><a href="'+c.href+'"'+(c.ext?' target="_blank" rel="noopener noreferrer"':'')+' aria-label="'+t(c.actAr,c.actEn)+' — '+c.value+'" title="'+t(c.actAr,c.actEn)+'">'+ico(c.ext?'arrow':(c.k==='phone'?'phone':'mail'))+'</a>'
-     +'<button type="button" data-copy="'+c.copy+'" aria-label="'+t('نسخ ','Copy ')+c.value+'" title="'+t('نسخ','Copy')+'">'+ico('copy')+'</button></span></div>';}).join('');
-}
+     +'<button type="button" data-copy="'+c.value+'" aria-label="'+t('نسخ ','Copy ')+c.value+'" title="'+t('نسخ','Copy')+'">'+ico('copy')+'</button></span></div>';}).join('');}
 function contactCards(){
   return '<div class="contactgrid">'+CONTACT.map(function(c){
     return '<article class="ccard rv'+(c.k==='instagram'?' ccard--ig':'')+'" style="--c:'+c.c+'">'
      +'<span class="ccard-ico">'+ico(c.icon,'lg')+'</span>'
      +'<div><small>'+t(c.ar,c.en)+'</small><b>'+c.value+'</b></div>'
      +'<div class="row" style="margin-top:var(--s4)"><a class="btn btn--o btn--sm" href="'+c.href+'"'+(c.ext?' target="_blank" rel="noopener noreferrer"':'')+'>'+ico(c.ext?'arrow':(c.k==='phone'?'phone':'mail'))+t(c.actAr,c.actEn)+'</a>'
-     +'<button class="btn btn--o btn--sm" type="button" data-copy="'+c.copy+'">'+ico('copy')+t('نسخ','Copy')+'</button></div></article>';}).join('')+'</div>';
-}
+     +'<button class="btn btn--o btn--sm" type="button" data-copy="'+c.value+'">'+ico('copy')+t('نسخ','Copy')+'</button></div></article>';}).join('')+'</div>';}
 function contactSection(tint){
   return sec({tint:tint,id:'contact',idx:'10',kicker:t('تواصل','Contact'),hue:'var(--h5)',title:t('تواصل مع فريق IT Professionals','Contact the IT Professionals team'),
    lead:t('للاستفسار عن المشروع أو أعمال الفريق أو التعاون التقني، يمكنكم التواصل عبر القنوات التالية.','For enquiries about the project, the team\u2019s work or technical collaboration, reach us through the channels below.'),
    aside:'<button class="btn btn--c" type="button" data-act="contact">'+ico('chat')+t('نافذة التواصل','Contact panel')+'</button>',
-   body:contactCards()});
-}
+   body:contactCards()});}
 
 /* ═════ البيانات ═════ */
 var MEMBERS=[
@@ -1036,19 +1087,36 @@ function bvc(bi,ci,mid){return '<div class="vs"><div class="panel rv" style="--c
 function exPanel(ti,tx,ex){return '<div class="panel panel--t rv" style="margin-top:var(--s6)"><h3>'+ico('target')+' '+ti+'</h3><p style="margin-top:var(--s3)">'+tx+'</p>'+(ex||'')+'</div>';}
 function orgChart(){var l=MEMBERS[0];return dg(t('المخطط التنظيمي للفريق','Team organizational chart'),'<div class="org" role="img" aria-label="'+t('Bisher في الأعلى وتحته خمسة أعضاء','Bisher at the top with five members below')+'"><div class="orgtop"><div class="node lead-node"><b><bdi>'+l.n+'</bdi></b><span>'+mg(l,'role')+'</span></div></div><div class="stem" aria-hidden="true"></div><div class="orgrow">'+MEMBERS.slice(1).map(function(m){return '<div class="node"><b><bdi>'+m.n+'</bdi></b><span>'+mg(m,'role')+'</span></div>';}).join('')+'</div></div>',t('الوصف النصي: يتولى Bisher القيادة والتنسيق والتقديم، ويعمل تحته خمسة أعضاء تتوزع مسؤولياتهم بين البحث والترجمة والتصميم ودعم العروض. يتحول المخطط إلى ترتيب رأسي على الشاشات الصغيرة.','Text description: Bisher handles leadership, coordination and presenting; five members below cover research, translation, design and presentation support. The chart stacks vertically on small screens.'),'users');}
 function assetTools(kind){
-  return '<div class="uploadrow"><button class="btn btn--p btn--sm" type="button" data-dl="'+kind+'-png">'+ico('down')+t('تحميل PNG','Download PNG')+'</button>'
-  +(kind==='logo'?'<button class="btn btn--o btn--sm" type="button" data-dl="logo-svg">'+ico('down')+t('تحميل SVG','Download SVG')+'</button>':'<button class="btn btn--o btn--sm" type="button" data-open="brochure">'+ico('expand')+t('فتح البطاقة','Open card')+'</button>')
+  return '<div class="uploadrow"><button class="btn btn--p btn--sm" type="button" data-dl="'+kind+'-png">'+ico('down')+(kind==='logo'?t('تحميل PNG 2048','Download PNG 2048'):t('تحميل PNG','Download PNG'))+'</button>'
+  +(kind==='logo'?'<button class="btn btn--o btn--sm" type="button" data-dl="logo-svg">'+ico('down')+t('تحميل SVG','Download SVG')+'</button><button class="btn btn--o btn--sm" type="button" data-dl="logo-small-svg">'+ico('down')+t('نسخة مبسطة','Simplified')+'</button>':'<button class="btn btn--o btn--sm" type="button" data-open="brochure">'+ico('expand')+t('فتح البطاقة','Open card')+'</button>')
   +'<label class="btn btn--o btn--sm filebtn">'+ico('up')+t('رفع الملف الأصلي','Upload original')+'<input type="file" accept="image/*" data-up="'+kind+'" aria-label="'+t('رفع الملف الأصلي','Upload original file')+'"></label>'
   +(CUSTOM[kind]?'<button class="btn btn--o btn--sm" type="button" data-reset="'+kind+'">'+ico('close')+t('استعادة النسخة المدمجة','Restore built-in')+'</button>':'')
-  +'</div><p class="assetnote">'+(CUSTOM[kind]?'<span class="badgeOrig">'+ico('check')+t('الملف الأصلي مفعّل','Original file active')+'</span> ':'')+t('الشعار مرسوم بصيغة SVG كاملة داخل إطار العرض: المربع المتدرّج، والفقاعتان الشفافتان المائلتان، وحروف ITP بعُقدتيها — دون قصّ أو تشويه، وبأي مقاس.','The logo is drawn as complete SVG inside its viewBox: the gradient square, both tilted translucent blobs, and the ITP monogram with its two nodes — never clipped or distorted, at any size.')+'</p>';}
+  +'</div><p class="assetnote">'+(CUSTOM[kind]?'<span class="badgeOrig">'+ico('check')+t('الملف الأصلي مفعّل','Original file active')+'</span> ':'')+(kind==='logo'
+    ? t('الشعار محفوظ بهويته الأصلية: الإطار المربع الدائري، والفقاعتان المائلتان، وحروف ITP بعُقدتيها. الحروف معتمة بالكامل وتُرسم فوق الطبقات الزخرفية، والتدرّج يتبدّل تلقائيًا مع الوضع الفاتح والداكن لضمان التباين. الخلفية شفافة، والمقاس متجهي بلا فقدان جودة.','The logo keeps its original identity: rounded square frame, two tilted blobs, and the ITP monogram with its two nodes. Letters are fully opaque and painted above the decorative layers, and the gradient switches automatically with light/dark mode for contrast. Transparent background, vector-sharp at any size.')
+    : t('البطاقة مبنية بنص حقيقي واتجاه إنجليزي معزول، فلا تتداخل الكلمات ولا تنقلب الأرقام، وتبقى واضحة عند التكبير أو على شاشة الهاتف.','The card uses real text with isolated English direction, so words never overlap and numbers never flip — sharp when zoomed or on a phone.'))+'</p>';}
+function logoLab(){
+  return '<div class="logolab rv">'
+   +'<div class="ll-row">'
+   +'<div class="ll-cell dark"><small>ON NAVY #080F1E</small><span class="mark" style="width:104px;height:104px">'+logoSVG({mode:'dark'})+'</span></div>'
+   +'<div class="ll-cell light"><small>ON WHITE #FFFFFF</small><span class="mark" style="width:104px;height:104px">'+logoSVG({mode:'light'})+'</span></div>'
+   +'</div><div class="ll-row">'
+   +'<div class="ll-cell black"><small>ON BLACK #000000</small><span class="mark" style="width:104px;height:104px">'+logoSVG({mode:'dark'})+'</span></div>'
+   +'<div class="ll-cell tint"><small>ON LIGHT #F2F5FA</small><span class="mark" style="width:104px;height:104px">'+logoSVG({mode:'light'})+'</span></div>'
+   +'</div>'
+   +'<div class="ll-sizes">'
+   +[32,48,64,96].map(function(s){return '<div class="ll-size"><span class="mark" style="--sz:'+s+'px">'+logoSVG({small:s<=48})+'</span><small class="num">'+s+'px</small></div>';}).join('')
+   +'</div>'
+   +'<p class="assetnote">'+t('المقاسات 32 و48 بكسل تستخدم نسخة مبسطة بلا هالة وبخط أثقل لضمان وضوح الحروف، و64 و96 بكسل تستخدم النسخة الكاملة. جميعها بنفس الهوية والأبعاد.','32px and 48px use a simplified aura-free, heavier-stroke build for legibility; 64px and 96px use the full mark. All share the same identity and proportions.')+'</p></div>';
+}
 function brandSection(tint){
   return sec({tint:tint,id:'brand',idx:'05',kicker:t('هوية الفريق','Team identity'),hue:'var(--h4)',title:t('الشعار وبطاقة الدعوة','Logo & invitation card'),
-   lead:t('شعار IT Professionals كاملًا بتدرجه الأزرق–البنفسجي، وبطاقة الدعوة التي صمّمها Saed. اضغط على البطاقة لفتحها بحجم كامل مع التكبير والتحميل.','The complete blue–violet IT Professionals logo and the invitation card designed by Saed. Press the card to open it full size with zoom and download.'),
+   lead:t('شعار ITP بهويته الأصلية بعد تحسين الوضوح والتباين، وبطاقة الدعوة التي صمّمها Saed. اضغط على البطاقة لفتحها بحجم كامل مع التكبير والتحميل.','The ITP logo with its original identity, refined for clarity and contrast, plus the invitation card designed by Saed. Press the card to open it full size with zoom and download.'),
    body:'<div class="assetgrid"><div class="assetbox rv"><h3>'+ico('spark')+' '+t('شعار الفريق','Team logo')+'</h3>'
-   +'<div class="logoStage" id="logoStage">'+(CUSTOM.logo?'<img src="'+CUSTOM.logo+'" alt="'+t('شعار الفريق','Team logo')+'">':logoSVG({lockup:'stack',ink:'#0A1425'}))+'</div>'
+   +'<div class="logoStage" id="logoStage">'+(CUSTOM.logo?'<img src="'+CUSTOM.logo+'" alt="'+t('شعار الفريق','Team logo')+'">':logoSVG({lockup:'stack',mode:'light',ink:'#0A1425'}))+'</div>'
    +'<div class="chips"><button class="btn btn--o btn--sm" type="button" data-stage="light">'+ico('sun')+t('خلفية فاتحة','Light')+'</button><button class="btn btn--o btn--sm" type="button" data-stage="dark">'+ico('moon')+t('خلفية داكنة','Dark')+'</button><button class="btn btn--o btn--sm" type="button" data-open="logo">'+ico('zoom')+t('تكبير','Enlarge')+'</button></div>'
    +assetTools('logo')+'</div>'
-   +'<div class="assetbox rv"><h3>'+ico('card')+' '+t('بطاقة الدعوة','Invitation card')+'</h3>'+posterBlock(false)+assetTools('brochure')+'</div></div>'});}
+   +'<div class="assetbox rv"><h3>'+ico('card')+' '+t('بطاقة الدعوة','Invitation card')+'</h3>'+posterBlock(false)+assetTools('brochure')+'</div></div>'
+   +'<div class="assetbox rv" style="margin-top:var(--s4)"><h3>'+ico('img')+' '+t('اختبار الشعار على الخلفيات والمقاسات','Logo proof on backgrounds and sizes')+'</h3>'+logoLab()+'</div>'});}
 
 /* ═════ الصفحات ═════ */
 var PAGES={};
@@ -1114,7 +1182,7 @@ PAGES.conference=function(){
   +sec({id:'invite',idx:'01',kicker:t('بطاقة الدعوة','Invitation card'),hue:'var(--h4)',title:t('بطاقة الدعوة التي صمّمها ','The invitation card designed by ')+'<bdi>Saed</bdi>',lead:t('اضغط على البطاقة أو على زر «افتح بطاقة الدعوة» لعرضها بحجم كامل داخل عارض مستقل، مع تكبير وتصغير وتحميل PNG.','Press the card or the “Open invitation card” button to view it full size in a dedicated viewer, with zoom and PNG download.'),
    body:'<div class="assetgrid"><div class="rv">'+posterBlock(true)+'</div><div class="panel rv"><h3>'+ico('doc')+' '+t('ما الذي تعرضه البطاقة؟','What the card shows')+'</h3><ul class="ticks" style="margin-top:var(--s4)">'
    +[t('عنوان الفعالية: Technology in Action — Digital Solutions to Everyday Challenges.','Event title: Technology in Action — Digital Solutions to Everyday Challenges.'),t('الموضوع الرئيسي: Emerging Technologies & Digital Innovation.','Featured topic: Emerging Technologies & Digital Innovation.'),t('التاريخ: 24 نوفمبر 2026.','Date: 24 November 2026.'),t('المكان: مركز الملك الحسين بن طلال للمؤتمرات، البحر الميت، الأردن.','Venue: King Hussein Bin Talal Convention Centre, Dead Sea, Jordan.'),t('مدة العرض: 15 دقيقة تقديم + 5 دقائق أسئلة وأجوبة.','Format: 15-minute presentation + 5-minute Q&A.'),t('الجهة المنظِّمة كما ترد في البطاقة: OptiTic.','Organizer as printed on the card: OptiTic.')].map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>'
-   +'<p class="note" style="margin-top:var(--s5)">'+t('صمّم Saed البطاقة ونسّق مظهرها مع ألوان العرض التقديمي وخطوطه. البطاقة هنا مبنية بنص حقيقي واتجاه إنجليزي معزول، فلا تتداخل الكلمات ولا تنقلب الأرقام، وتبقى واضحة عند التكبير أو على شاشة الهاتف.','Saed designed the card and aligned it with the presentation colours and typography. It is built with real text and isolated English direction, so words never overlap and numbers never flip — sharp when zoomed or on a phone.')+'</p>'
+   +'<p class="note" style="margin-top:var(--s5)">'+t('صمّم Saed البطاقة ونسّق مظهرها مع ألوان العرض التقديمي وخطوطه، بما فيها شعار ITP الذي يظهر في شارة البطاقة أعلى المعاينة.','Saed designed the card and aligned it with the presentation colours and typography, including the ITP logo shown in the badge above the preview.')+'</p>'
    +'<div style="margin-top:var(--s5)">'+assetTools('brochure')+'</div><div class="row"><a class="btn btn--o btn--sm" href="#/team">'+t('دور Saed في الفريق','Saed\u2019s role')+'</a><button class="btn btn--c btn--sm" type="button" data-act="contact">'+ico('chat')+t('تواصل','Contact')+'</button></div></div></div>'})
   +sec({tint:true,idx:'02',kicker:t('البطاقة التعريفية','Fact sheet'),hue:'var(--h6)',title:t('معلومات المؤتمر','Conference information'),body:grid(3,[card({icon:'cal',title:t('التاريخ','Date'),text:'<span class="num">24 November 2026</span>',c:'var(--h6)'}),card({icon:'pin',title:t('المكان','Venue'),text:t('مركز الملك الحسين بن طلال للمؤتمرات.','King Hussein Bin Talal Convention Centre.'),c:'var(--h5)'}),card({icon:'home',title:t('المنطقة','Region'),text:t('البحر الميت، الأردن.','Dead Sea, Jordan.'),c:'var(--h2)'}),card({icon:'users',title:t('الفريق','Team'),text:L('IT Professionals')+' — '+t('ستة أعضاء.','six members.'),c:'var(--h1)'}),card({icon:'target',title:t('الشركة','Company'),text:L('OptiTic')+' — '+t('شركة تكنولوجيا أردنية.','a Jordanian technology company.'),c:'var(--h4)'}),card({icon:'grid',title:t('الموضوع','Topic'),text:t('التقنيات الناشئة والابتكار الرقمي.','Emerging Technologies and Digital Innovation.'),c:'var(--h7)'})])+'<div class="panel rv" style="--c:var(--h6);text-align:center;margin-top:var(--s6)"><p class="eyebrow">'+ico('spark')+'<span>'+t('شعار الفعالية','Event slogan')+'</span></p><h3 style="margin-top:var(--s4);font-size:clamp(1.05rem,2.2vw,1.6rem)">'+t('التكنولوجيا في الواقع العملي: حلول رقمية للتحديات اليومية.','Technology in Action: Digital Solutions to Everyday Challenges.')+'</h3></div>'})
   +sec({id:'program',idx:'03',kicker:t('إدارة الوقت','Time management'),hue:'var(--h1)',title:t('برنامج العرض التقديمي','Presentation agenda'),lead:t('التقسيم الزمني المعتمد في الشريحة 22: 15 دقيقة للعرض و5 دقائق للأسئلة، بمجموع 20 دقيقة.','The timing from slide 22: 15 minutes plus 5 minutes of Q&A, 20 minutes total.'),
@@ -1133,7 +1201,7 @@ PAGES.team=function(){
    body:'<div class="panel rv leadcard" style="--c:var(--h6);margin-bottom:var(--s4)"><span class="av" aria-hidden="true">B</span><div><span class="midx">'+t('العضو 01 · قائد الفريق','Member 01 · Team leader')+'</span><div class="mname"><bdi>Bisher</bdi></div><p class="mrole" style="margin-top:var(--s2)">'+mg(MEMBERS[0],'role')+'</p><p class="mroleEn"><bdi>'+MEMBERS[0].en+'</bdi></p><p>'+mg(MEMBERS[0],'short')+'</p><details style="margin-top:var(--s3);border-top:1px dashed var(--color-border);padding-top:var(--s3)"><summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font:700 .89rem/1.5 var(--ff-head);color:var(--h6);min-height:46px">'+t('عرض التفاصيل','Show details')+'</summary><div><p class="subh">'+t('المسؤوليات','Responsibilities')+'</p><ul class="ticks" style="--c:var(--h6)">'+MEMBERS[0].resp.map(function(r){return '<li>'+t(r[0],r[1])+'</li>';}).join('')+'</ul><p class="subh">'+t('المساهمة','Contribution')+'</p><p>'+mg(MEMBERS[0],'contrib')+'</p><p class="subh">'+t('المهارات','Skills')+'</p><div class="chips">'+MEMBERS[0].skills.map(function(s){return '<span class="chip">'+t(s[0],s[1])+'</span>';}).join('')+'</div></div></details></div></div>'
    +grid(2,MEMBERS.slice(1).map(function(m,i){return '<article class="member rv" style="--c:'+m.c+'"><div class="mhead"><span class="av" aria-hidden="true">'+m.ini+'</span><div><span class="midx">'+t('العضو ','Member ')+('0'+(i+2)).slice(-2)+'</span><div class="mname"><bdi>'+m.n+'</bdi></div></div><span style="margin-inline-start:auto;color:var(--c)">'+ico(m.icon,'lg')+'</span></div><p class="mrole">'+mg(m,'role')+'</p><p class="mroleEn"><bdi>'+m.en+'</bdi></p><p>'+mg(m,'short')+'</p><details><summary>'+t('عرض التفاصيل','Show details')+'</summary><div><p class="subh">'+t('المسؤوليات','Responsibilities')+'</p><ul class="ticks" style="--c:'+m.c+'">'+m.resp.map(function(r){return '<li>'+t(r[0],r[1])+'</li>';}).join('')+'</ul><p class="subh">'+t('المساهمة','Contribution')+'</p><p>'+mg(m,'contrib')+'</p><p class="subh">'+t('المهارات المرتبطة بدوره','Skills linked to the role')+'</p><div class="chips">'+m.skills.map(function(s){return '<span class="chip">'+t(s[0],s[1])+'</span>';}).join('')+'</div></div></details></article>';}))})
   +sec({idx:'03',kicker:t('التكامل','Integration'),hue:'var(--h4)',title:t('مجموعات العمل','Work groups'),lead:t('أربع مجموعات تكاملت لتحقيق هدف مشترك: محتوى دقيق، بلغة واضحة، وتصميم منظم، وتقديم مهني.','Four groups integrated toward one goal: accurate content, clear language, organized design and professional presenting.'),
-   body:grid(4,[card({icon:'search',title:t('البحث','Research'),c:'var(--h1)',text:L('Abed')+' + '+L('Ahmad'),extra:'<p style="margin-top:var(--s3)">'+t('جمعا المعلومات والمصادر والشروحات والأمثلة، وراجعا دقة المحتوى قبل انتقاله للمرحلة التالية.','They gathered information, sources, explanations and examples, and checked accuracy before the next stage.')+'</p>'}),card({icon:'lang',title:t('الترجمة وتنظيم المحتوى','Translation & content'),c:'var(--h5)',text:L('Obada'),extra:'<p style="margin-top:var(--s3)">'+t('ترجم المواد ونظّمها ونسّقها وراجعها، وربط بين ما أنتجه الباحثون وما يحتاجه المصممون.','Translated, organized, formatted and reviewed the material, linking research output to design needs.')+'</p>'}),card({icon:'palette',title:t('التصميم ومواد الفعالية','Design & event materials'),c:'var(--h3)',text:L('Ward')+' + '+L('Saed')+' · '+L('Ahmad'),extra:'<p style="margin-top:var(--s3)">'+t('أنتجا الشرائح والمواد البصرية وبطاقة الدعوة بهوية بصرية موحدة.','They produced slides, visuals and the invitation card with a unified identity.')+'</p>'}),card({icon:'crown',title:t('القيادة والتنسيق والتقديم','Leadership & presenting'),c:'var(--h6)',text:L('Bisher'),extra:'<p style="margin-top:var(--s3)">'+t('وزّع المهام وتابع التقدم ونسّق القرارات وأعدّ العرض الرئيسي وتحضّر للتقديم والأسئلة.','Distributed tasks, tracked progress, coordinated decisions, prepared the main deck and rehearsed.')+'</p>'})])
+   body:grid(4,[card({icon:'search',title:t('البحث','Research'),c:'var(--h1)',text:L('Abed')+' + '+L('Ahmad'),extra:'<p style="margin-top:var(--s3)">'+t('جمعا المعلومات والمصادر والشروحات والأمثلة، وراجعا دقة المحتوى قبل انتقاله للمرحلة التالية.','They gathered information, sources, explanations and examples, and checked accuracy before the next stage.')+'</p>'}),card({icon:'lang',title:t('الترجمة وتنظيم المحتوى','Translation & content'),c:'var(--h5)',text:L('Obada'),extra:'<p style="margin-top:var(--s3)">'+t('ترجم المواد ونظّمها ونسّقها وراجعها، وربط بين ما أنتجه الباحثون وما يحتاجه المصممون.','Translated, organized, formatted and reviewed the material, linking research output to design needs.')+'</p>'}),card({icon:'palette',title:t('التصميم ومواد الفعالية','Design & event materials'),c:'var(--h3)',text:L('Ward')+' + '+L('Saed')+' · '+L('Ahmad'),extra:'<p style="margin-top:var(--s3)">'+t('أنتجا الشرائح والمواد البصرية وبطاقة الدعوة بهوية بصرية موحدة، وطوّرا شعار ITP ليظهر واضحًا في كل مواد المشروع.','They produced slides, visuals and the invitation card with a unified identity, and refined the ITP logo so it reads clearly across all project materials.')+'</p>'}),card({icon:'crown',title:t('القيادة والتنسيق والتقديم','Leadership & presenting'),c:'var(--h6)',text:L('Bisher'),extra:'<p style="margin-top:var(--s3)">'+t('وزّع المهام وتابع التقدم ونسّق القرارات وأعدّ العرض الرئيسي وتحضّر للتقديم والأسئلة.','Distributed tasks, tracked progress, coordinated decisions, prepared the main deck and rehearsed.')+'</p>'})])
    +'<div class="panel rv" style="margin-top:var(--s6)"><h3>'+t('كيف تكاملت المجموعات؟','How did the groups integrate?')+'</h3><p style="margin-top:var(--s3)">'+t('انتقل المحتوى من مجموعة البحث إلى الترجمة والتنظيم، ثم إلى التصميم، بينما حافظت القيادة على وضوح المسؤوليات ومتابعة المواعيد. وقد أتاح وجود Ahmad في المجالين البحثي والتصميمي انتقالًا أسرع للمعلومات وتقليلًا لتكرار العمل، كما ضمن تنسيق Obada مع المصممين اتساق الشرائح. وبذلك اكتملت المخرجات في صورة مشروع واحد متكامل.','Content moved from research to translation and organization, then to design, while leadership kept responsibilities clear and deadlines tracked. Ahmad\u2019s presence in both research and design sped up transfer and reduced duplicated work, and Obada\u2019s coordination kept slides consistent.')+'</p><div class="row"><a class="btn btn--p" href="#/project">'+t('توزيع المسؤوليات والجدول الزمني','Responsibilities & timeline')+'</a><a class="btn btn--o" href="'+href('professional','teamwork')+'">'+t('العمل الجماعي','Teamwork')+'</a><a class="btn btn--o" href="#/showcase">'+t('مساهمات الأعضاء','Contributions')+'</a></div></div>'})
   +contactSection(true);
 };
@@ -1211,7 +1279,7 @@ PAGES.project=function(){
    body:dg(t('المراحل الثماني × الفترات الخمس','Eight stages × five periods'),'<div class="dscroll"><div class="gantt" role="img" aria-label="'+t('مخطط جانت للمراحل الثماني','Gantt chart of the eight stages')+'"><div class="ghead"><span>'+t('المرحلة','Stage')+'</span><div class="gtrack">'+per.map(function(p){return '<span>'+t(p[0],p[1])+'</span>';}).join('')+'</div></div>'+st.map(function(s,i){return '<div class="grow"><div class="gname">'+t(s[0],s[1])+'</div><div class="gtrack"><i class="gcell"></i><i class="gcell"></i><i class="gcell"></i><i class="gcell"></i><i class="gcell"></i><span class="gbar'+(i===7?' st':'')+'" style="grid-column:'+s[2]+'/'+s[3]+';--c:'+s[4]+'">'+t('مكتمل','Done')+'</span></div></div>';}).join('')+'</div></div><p class="gleg">'+st.map(function(s){return '<span><i style="background:'+s[4]+'"></i>'+t(s[0],s[1])+'</span>';}).join('')+'</p>',t('الوصف النصي: امتد البحث على ثلاث فترات، وتوازت الترجمة مع التصميم في الفترتين الثالثة والرابعة، وخُصصت الفترة الأخيرة للتدريب والجاهزية. جميع المراحل مكتملة وفق العرض المرفق.','Text description: research spanned three periods, translation ran alongside design in periods three and four, and the last period was for rehearsal and readiness. All stages are completed per the deck.'),'cal')})
   +sec({tint:true,idx:'02',kicker:t('سير العمل','Workflow'),hue:'var(--h5)',title:t('مراحل سير العمل الست','The six workflow stages'),lead:t('إعادة إنشاء للمخطط الوارد في الشريحة 10، مع أعمال جرت بالتوازي.','A rebuild of the diagram on slide 10, with some work in parallel.'),body:dg(t('مخطط سير العمل','Workflow diagram'),flow(workflow()),t('الوصف النصي: من البحث إلى الترجمة إلى التصميم، مع تنسيق مستمر من القيادة، ثم التحضير للتقديم، وانتهاءً بدمج المخرجات.','Text description: research → translation → design, with continuous coordination, then presentation preparation, ending with integration.'),'flow')})
   +sec({idx:'03',kicker:t('إدارة الوقت','Time management'),hue:'var(--h6)',title:t('كيف نُظّم الوقت؟','How time was managed'),lead:t('مدة العرض 15 دقيقة وفترة الإعداد محدودة، مما جعل إدارة الوقت عنصرًا حاسمًا.','A 15-minute presentation and a limited preparation period made time management decisive.'),body:grid(4,tm.map(function(x,i){return card({icon:['target','list','puzzle','cal','chart','users','check','clock'][i],title:t(x[0],x[1]),text:t(x[2],x[3]),c:HUES[i%8]});}))})
-  +sec({tint:true,idx:'04',kicker:t('المسؤوليات','Responsibilities'),hue:'var(--h4)',title:t('توزيع المسؤوليات والمخرجات','Responsibility and deliverable distribution'),body:tbl(t('اسم كل عضو ودوره ومهامه والمخرجات المرتبطة بعمله.','Each member, role, tasks and related deliverables.'),[t('العضو','Member'),t('الدور','Role'),t('المهام الرئيسية','Main tasks'),t('المخرجات','Deliverables')],[[L('Bisher'),mg(MEMBERS[0],'role'),t('تنظيم العمل، توزيع المهام، متابعة التقدم، تنسيق القرارات، إعداد الشرح والتدرب','Organizing work, distributing tasks, tracking progress, coordinating decisions, preparing and rehearsing'),t('عرض نظرة عامة على المشروع، تنسيق المخرجات، التحضير للعرض والأسئلة','Overview deck, deliverable coordination, presentation and Q&A prep')],[L('Obada'),mg(MEMBERS[1],'role'),t('ترجمة الأبحاث، تنظيم المقدمة العربية، تنسيق المحتوى ومراجعته','Translating research, organizing the Arabic introduction, formatting and reviewing'),t('المحتوى المترجم والمنظم، العرض التقني (11 شريحة)','Translated content, technical deck (11 slides)')],[L('Abed Alkhteeb'),mg(MEMBERS[2],'role'),t('جمع المعلومات من مصادر موثوقة وإعداد الشروحات والأمثلة','Gathering information from reliable sources and preparing explanations'),t('الأبحاث التقنية والمعلومات الداعمة، المقدمة الإنجليزية','Technical research, English introduction')],[L('Ahmad Alkhteeb'),mg(MEMBERS[3],'role'),t('المساعدة في البحث وتنظيم المعلومات ومراجعتها ودعم التصميم','Assisting research, organizing and reviewing information, design support'),t('مواد بحثية منظمة، دعم شرائح PowerPoint','Organized research, PowerPoint support')],[L('Ward'),mg(MEMBERS[4],'role'),t('تصميم الشرائح والتخطيطات واختيار العناصر البصرية','Designing slides, layouts and visual elements'),t('تنسيق وتصميم الشرائح، الشرائح الأولية للمقدمة','Slide design, initial introduction slides')],[L('Saed'),mg(MEMBERS[5],'role'),t('تصميم بطاقة الدعوة ودعم المواد البصرية والحفاظ على الهوية','Designing the invitation card, supporting visuals, maintaining identity'),t('بطاقة الدعوة، دعم تصميم العرض','Invitation card, presentation design support')]])})
+  +sec({tint:true,idx:'04',kicker:t('المسؤوليات','Responsibilities'),hue:'var(--h4)',title:t('توزيع المسؤوليات والمخرجات','Responsibility and deliverable distribution'),body:tbl(t('اسم كل عضو ودوره ومهامه والمخرجات المرتبطة بعمله.','Each member, role, tasks and related deliverables.'),[t('العضو','Member'),t('الدور','Role'),t('المهام الرئيسية','Main tasks'),t('المخرجات','Deliverables')],[[L('Bisher'),mg(MEMBERS[0],'role'),t('تنظيم العمل، توزيع المهام، متابعة التقدم، تنسيق القرارات، إعداد الشرح والتدرب','Organizing work, distributing tasks, tracking progress, coordinating decisions, preparing and rehearsing'),t('عرض نظرة عامة على المشروع، تنسيق المخرجات، التحضير للعرض والأسئلة','Overview deck, deliverable coordination, presentation and Q&A prep')],[L('Obada'),mg(MEMBERS[1],'role'),t('ترجمة الأبحاث، تنظيم المقدمة العربية، تنسيق المحتوى ومراجعته','Translating research, organizing the Arabic introduction, formatting and reviewing'),t('المحتوى المترجم والمنظم، العرض التقني (11 شريحة)','Translated content, technical deck (11 slides)')],[L('Abed Alkhteeb'),mg(MEMBERS[2],'role'),t('جمع المعلومات من مصادر موثوقة وإعداد الشروحات والأمثلة','Gathering information from reliable sources and preparing explanations'),t('الأبحاث التقنية والمعلومات الداعمة، المقدمة الإنجليزية','Technical research, English introduction')],[L('Ahmad Alkhteeb'),mg(MEMBERS[3],'role'),t('المساعدة في البحث وتنظيم المعلومات ومراجعتها ودعم التصميم','Assisting research, organizing and reviewing information, design support'),t('مواد بحثية منظمة، دعم شرائح PowerPoint','Organized research, PowerPoint support')],[L('Ward'),mg(MEMBERS[4],'role'),t('تصميم الشرائح والتخطيطات واختيار العناصر البصرية','Designing slides, layouts and visual elements'),t('تنسيق وتصميم الشرائح، الشعار، الشرائح الأولية للمقدمة','Slide design, the logo, initial introduction slides')],[L('Saed'),mg(MEMBERS[5],'role'),t('تصميم بطاقة الدعوة ودعم المواد البصرية والحفاظ على الهوية','Designing the invitation card, supporting visuals, maintaining identity'),t('بطاقة الدعوة، دعم تصميم العرض','Invitation card, presentation design support')]])})
   +sec({idx:'05',kicker:t('المخاطر','Risks'),hue:'var(--h8)',title:t('إدارة المخاطر والخطط البديلة','Risk management and fallback plans'),lead:t('أمثلة توضيحية لمشاريع مشابهة، وليست حوادث مؤكدة حدثت للفريق.','Illustrative examples for similar projects, not confirmed incidents.'),body:tbl(t('سبعة مخاطر محتملة وأثرها والإجراء البديل.','Seven potential risks, impact and fallback.'),[t('الخطر المحتمل','Risk'),t('التأثير','Impact'),t('الإجراء البديل','Fallback')],rk.map(function(r){return [t(r[0],r[1]),t(r[2],r[3]),t(r[4],r[5])];}))+'<div class="panel panel--t rv" style="margin-top:var(--s6)"><h3>'+ico('check')+' '+t('إدارة الجودة','Quality management')+'</h3><p style="margin-top:var(--s3)">'+t('اعتمدت الجودة على مراجعة المعلومات ومصادرها، وتوحيد التنسيق عبر قالب بصري واحد، والتأكد من وضوح المحتوى وملاءمته للجمهور، ثم مراجعة العرض كاملًا قبل استخدامه. وقد ساعدت مراجعتان متتاليتان — المحتوى لدى الترجمة والشكل لدى التصميم — على تقليل التكرار والأخطاء.','Quality relied on reviewing information and sources, unifying formatting through one template, ensuring clarity and audience fit, then reviewing the whole deck. Two successive reviews — content at translation and visual at design — reduced duplication and errors.')+'</p><div class="row"><a class="btn btn--p" href="'+href('professional','problem-solving')+'">'+t('نموذج حل المشكلات','Problem-solving model')+'</a><a class="btn btn--o" href="#/team">'+t('أدوار الأعضاء','Member roles')+'</a><a class="btn btn--o" href="#/showcase">'+t('المخرجات','Deliverables')+'</a></div></div>'});
 };
 PAGES.professional=function(){
@@ -1247,14 +1315,14 @@ PAGES.development=function(){
   +sec({tint:true,idx:'06',kicker:t('الأدلة','Evidence'),hue:'var(--h7)',title:t('أدلة التطوير المهني','CPD evidence'),lead:t('أنواع الأدلة المرتبطة بالمشروع التي يمكن توثيقها ضمن ملف التطوير.','Types of project evidence that can be recorded in a CPD portfolio.'),body:grid(4,ev.map(function(x,i){return '<div class="card rv" style="--c:'+HUES[i%8]+';align-items:center;text-align:center"><div class="cico">'+ico(x[2])+'</div><h3 style="margin:0">'+t(x[0],x[1])+'</h3></div>';}))+'<div class="panel panel--t rv" style="--c:var(--h7);margin-top:var(--s6)"><h3>'+t('أهمية التطوير المستمر','Why continuous development matters')+'</h3><p style="margin-top:var(--s3)">'+t('يساعد على مواكبة سرعة تطور التكنولوجيا، وزيادة المعرفة المتخصصة، وتحسين جودة الأداء، والاستعداد للمشاريع المستقبلية بثقة أكبر، ويحوّل الخبرة العابرة إلى معرفة موثقة يمكن نقلها للآخرين.','It helps keep pace with technology, deepen specialist knowledge, improve performance and prepare for future projects, turning passing experience into documented, shareable knowledge.')+'</p><div class="row"><a class="btn btn--p" href="#/showcase">'+t('معرض الأعمال والأدلة','Showcase & evidence')+'</a><a class="btn btn--o" href="#/professional">'+t('الممارسة المهنية','Professional practice')+'</a><a class="btn btn--o" href="#/references">'+t('المصادر','References')+'</a></div></div>'});
 };
 
-var WORKS=[['res','الأبحاث التقنية والمعلومات الداعمة','Technical research and supporting information','جمع المعلومات من مصادر أكاديمية موثوقة وإعداد الشروحات والأمثلة العملية.','Gathering information from reliable academic sources and preparing explanations and examples.','مواد بحثية','Research material','Abed Alkhteeb · Ahmad Alkhteeb','search','var(--h1)'],['res','المحتوى التعريفي بالإنجليزية والعربية','Introductory content in English and Arabic','إعداد مقدمة بالإنجليزية وترجمتها إلى العربية وصياغة المحتوى التعريفي.','Preparing an English introduction, translating it and drafting the topic introduction.','محتوى نصي','Text content','Abed Alkhteeb · Obada','doc','var(--h5)'],['res','المحتوى المترجم والمنظم','Translated and organized content','ترجمة الأبحاث وتنظيمها وتنسيقها ومراجعتها بما يحافظ على الاتساق.','Translating, organizing, formatting and reviewing the research consistently.','محتوى منظم','Organized content','Obada','lang','var(--h2)'],['deck','العرض التقديمي الخاص بالتكنولوجيا','Technology presentation','عرض من 11 شريحة يتناول التكنولوجيا والتقنيات الناشئة والتحول الرقمي وريادة الأعمال الرقمية.','An 11-slide deck on technology, emerging technologies, digital transformation and entrepreneurship.','PowerPoint','Obada · Abed · Ahmad · Ward','slides','var(--h3)'],['deck','عرض نظرة عامة على المشروع','Project overview presentation','عرض من 18 شريحة يتناول المشروع والفريق والمسؤوليات والتنسيق.','An 18-slide deck on the project, team, responsibilities and coordination.','PowerPoint','Bisher','slides','var(--h6)'],['des','بطاقة الدعوة','Invitation card','بطاقة الدعوة للفعالية متناسقة مع موضوع المشروع وهويته البصرية — تُفتح بحجم كامل.','The event invitation card aligned with the project identity — opens full size.','تصميم جرافيكي','Graphic design','Saed','card','var(--h4)'],['des','تنسيق وتصميم الشرائح','Slide formatting and design','تخطيطات منظمة وعناصر بصرية موحدة تحسّن وضوح المحتوى.','Organized layouts and unified visuals improving clarity.','تصميم بصري','Visual design','Ward · Saed · Ahmad','palette','var(--h7)'],['prep','التحضير للعرض والتدريب','Presentation preparation and rehearsal','دراسة المحتوى وإعداد الشرح الشفهي والتدرب ضمن 15 دقيقة.','Studying content, preparing the oral explanation and rehearsing within 15 minutes.','تحضير وتدريب','Preparation','Bisher','mic','var(--h8)'],['prep','التحضير للأسئلة والأجوبة','Q&A preparation','تجهيز إجابات للأسئلة المتوقعة خلال الخمس دقائق بعد العرض.','Preparing answers for the five minutes after the presentation.','تحضير','Preparation','Bisher + team','help','var(--h1)'],['prep','تخطيط الفريق وتنسيق المسؤوليات','Team planning and coordination','توزيع الأدوار وإعداد الجدول الزمني ومتابعة التقدم وتنسيق التواصل.','Distributing roles, building the timeline, tracking progress and coordinating communication.','وثائق تنظيمية','Organizational docs','Bisher + all','users','var(--h2)']];
+var WORKS=[['res','الأبحاث التقنية والمعلومات الداعمة','Technical research and supporting information','جمع المعلومات من مصادر أكاديمية موثوقة وإعداد الشروحات والأمثلة العملية.','Gathering information from reliable academic sources and preparing explanations and examples.','مواد بحثية','Research material','Abed Alkhteeb · Ahmad Alkhteeb','search','var(--h1)'],['res','المحتوى التعريفي بالإنجليزية والعربية','Introductory content in English and Arabic','إعداد مقدمة بالإنجليزية وترجمتها إلى العربية وصياغة المحتوى التعريفي.','Preparing an English introduction, translating it and drafting the topic introduction.','محتوى نصي','Text content','Abed Alkhteeb · Obada','doc','var(--h5)'],['res','المحتوى المترجم والمنظم','Translated and organized content','ترجمة الأبحاث وتنظيمها وتنسيقها ومراجعتها بما يحافظ على الاتساق.','Translating, organizing, formatting and reviewing the research consistently.','محتوى منظم','Organized content','Obada','lang','var(--h2)'],['deck','العرض التقديمي الخاص بالتكنولوجيا','Technology presentation','عرض من 11 شريحة يتناول التكنولوجيا والتقنيات الناشئة والتحول الرقمي وريادة الأعمال الرقمية.','An 11-slide deck on technology, emerging technologies, digital transformation and entrepreneurship.','PowerPoint','Obada · Abed · Ahmad · Ward','slides','var(--h3)'],['deck','عرض نظرة عامة على المشروع','Project overview presentation','عرض من 18 شريحة يتناول المشروع والفريق والمسؤوليات والتنسيق.','An 18-slide deck on the project, team, responsibilities and coordination.','PowerPoint','Bisher','slides','var(--h6)'],['des','بطاقة الدعوة','Invitation card','بطاقة الدعوة للفعالية متناسقة مع موضوع المشروع وهويته البصرية — تُفتح بحجم كامل.','The event invitation card aligned with the project identity — opens full size.','تصميم جرافيكي','Graphic design','Saed','card','var(--h4)'],['des','الشعار وتنسيق الشرائح','Logo and slide design','تحسين شعار ITP وتوحيد تخطيطات الشرائح وعناصرها البصرية لوضوح أعلى.','Refining the ITP logo and unifying slide layouts and visuals for higher clarity.','تصميم بصري','Visual design','Ward · Saed · Ahmad','palette','var(--h7)'],['prep','التحضير للعرض والتدريب','Presentation preparation and rehearsal','دراسة المحتوى وإعداد الشرح الشفهي والتدرب ضمن 15 دقيقة.','Studying content, preparing the oral explanation and rehearsing within 15 minutes.','تحضير وتدريب','Preparation','Bisher','mic','var(--h8)'],['prep','التحضير للأسئلة والأجوبة','Q&A preparation','تجهيز إجابات للأسئلة المتوقعة خلال الخمس دقائق بعد العرض.','Preparing answers for the five minutes after the presentation.','تحضير','Preparation','Bisher + team','help','var(--h1)'],['prep','تخطيط الفريق وتنسيق المسؤوليات','Team planning and coordination','توزيع الأدوار وإعداد الجدول الزمني ومتابعة التقدم وتنسيق التواصل.','Distributing roles, building the timeline, tracking progress and coordinating communication.','وثائق تنظيمية','Organizational docs','Bisher + all','users','var(--h2)']];
 var SLIDES=[['الشرائح 1–2','Slides 1–2','عنوان المشروع ونظرة عامة','Project title and overview','lines'],['الشريحة 8','Slide 8','المخطط التنظيمي للفريق','Team organizational chart','bars'],['الشريحة 9','Slide 9','الجدول الزمني للمشروع','Project timeline','bars'],['الشريحة 10','Slide 10','مخطط سير العمل','Workflow diagram','lines'],['الشريحة 11','Slide 11','الموضوعات البحثية الأحد عشر','The eleven research topics','lines'],['الشريحة 18','Slide 18','التصميم وبطاقة الدعوة','Design and invitation card','bars']];
 function slideHTML(i){var s=SLIDES[i];var b=s[4]==='bars'?'<div class="sbars"><i style="height:60%"></i><i style="height:85%"></i><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i></div>':'<div class="slines"><i></i><i></i><i></i></div>';return '<div class="slide"><span class="stag">'+t('معاينة تخطيطية · ','Schematic preview · ')+t(s[0],s[1])+'</span><h4>'+t(s[2],s[3])+'</h4><span class="srule"></span>'+b+'</div>';}
 PAGES.showcase=function(){
   var cats=[['all','الكل','All'],['res','بحث ومحتوى','Research'],['deck','عروض تقديمية','Presentations'],['des','تصميم','Design'],['prep','تحضير وتنسيق','Preparation']];
   return phero({c:'var(--h6)',eyebrow:t('الأرشيف الرقمي','Digital archive'),icon:'slides',parent:[t('المشروع','Project'),'#/about'],title:t('معرض الأعمال ','Showcase ')+'<span class="grad">'+t('والمخرجات المكتملة','& completed deliverables')+'</span>',lead:t('عشرة مخرجات أنجزها الفريق وفق الشريحة 26، مع أصول الهوية المتاحة للعرض والتحميل: الشعار وبطاقة الدعوة.','Ten deliverables completed per slide 26, plus the brand assets available to view and download: the logo and invitation card.'),meta:done()+bc([t('10 مخرجات','10 deliverables'),t('3 عروض تقديمية','3 presentations')])})
   +sec({idx:'01',kicker:t('المخرجات','Deliverables'),hue:'var(--h7)',title:t('الأعمال العشرة المنجزة','The ten completed works'),lead:t('استخدم المرشحات لتصفية الأعمال حسب النوع.','Use the filters to narrow the works by type.'),
-   body:'<div class="filters" id="workFilters" role="group" aria-label="'+t('تصفية الأعمال','Filter works')+'">'+cats.map(function(c,i){var n=c[0]==='all'?WORKS.length:WORKS.filter(function(w){return w[0]===c[0];}).length;return '<button type="button" data-cat="'+c[0]+'" aria-pressed="'+(i===0)+'">'+t(c[1],c[2])+' <span class="num">('+n+')</span></button>';}).join('')+'</div><div class="grid g3" id="workGrid">'+WORKS.map(function(w,i){return '<article class="card work rv" data-cat="'+w[0]+'" style="--c:'+w[8]+'"><div class="wtop"><div class="cico">'+ico(w[7])+'</div>'+done()+'</div><h3><span class="num">'+(i+1)+'.</span> '+t(w[1],w[2])+'</h3><p>'+t(w[3],w[4])+'</p>'+(i===5?'<button class="btn btn--p btn--sm" type="button" data-open="brochure">'+ico('expand')+t('افتح البطاقة','Open card')+'</button>':'')+'<div class="wmeta"><span><b>'+t('النوع: ','Type: ')+'</b>'+(w[5]==='PowerPoint'?L('PowerPoint'):t(w[5],w[5]))+'</span><span><b>'+t('الأعضاء: ','Members: ')+'</b><bdi>'+w[6]+'</bdi></span><span><b>'+t('الملف: ','File: ')+'</b>'+(i===5?t('متوفر داخل الموقع','available on site'):t('غير مرفق','not attached'))+'</span></div></article>';}).join('')+'</div><p class="note" style="margin-top:var(--s5)" id="workCount"></p>'})
+   body:'<div class="filters" id="workFilters" role="group" aria-label="'+t('تصفية الأعمال','Filter works')+'">'+cats.map(function(c,i){var n=c[0]==='all'?WORKS.length:WORKS.filter(function(w){return w[0]===c[0];}).length;return '<button type="button" data-cat="'+c[0]+'" aria-pressed="'+(i===0)+'">'+t(c[1],c[2])+' <span class="num">('+n+')</span></button>';}).join('')+'</div><div class="grid g3" id="workGrid">'+WORKS.map(function(w,i){return '<article class="card work rv" data-cat="'+w[0]+'" style="--c:'+w[8]+'"><div class="wtop"><div class="cico">'+ico(w[7])+'</div>'+done()+'</div><h3><span class="num">'+(i+1)+'.</span> '+t(w[1],w[2])+'</h3><p>'+t(w[3],w[4])+'</p>'+(i===5?'<button class="btn btn--p btn--sm" type="button" data-open="brochure">'+ico('expand')+t('افتح البطاقة','Open card')+'</button>':i===6?'<button class="btn btn--p btn--sm" type="button" data-open="logo">'+ico('zoom')+t('افتح الشعار','Open logo')+'</button>':'')+'<div class="wmeta"><span><b>'+t('النوع: ','Type: ')+'</b>'+(w[5]==='PowerPoint'?L('PowerPoint'):t(w[5],w[5]))+'</span><span><b>'+t('الأعضاء: ','Members: ')+'</b><bdi>'+w[6]+'</bdi></span><span><b>'+t('الملف: ','File: ')+'</b>'+((i===5||i===6)?t('متوفر داخل الموقع','available on site'):t('غير مرفق','not attached'))+'</span></div></article>';}).join('')+'</div><p class="note" style="margin-top:var(--s5)" id="workCount"></p>'})
   +brandSection(true)
   +sec({idx:'03',kicker:t('العروض','Presentations'),hue:'var(--h2)',title:t('العروض التقديمية الثلاثة','The three presentations'),body:grid(3,[card({icon:'slides',title:t('العرض التقني','Technical presentation'),c:'var(--h1)',text:t('11 شريحة خلال مرحلة الإعداد، تتناول التكنولوجيا والتقنيات الناشئة والتحول الرقمي وريادة الأعمال الرقمية، وساهم فيه أعضاء البحث والترجمة والتصميم.','11 slides during preparation covering technology, emerging technologies, digital transformation and entrepreneurship, with research, translation and design members contributing.'),extra:'<div class="wmeta"><span><b>'+t('الحالة: ','Status: ')+'</b>'+t('مكتمل','completed')+'</span><span><b>'+t('الملف المقترح: ','Suggested file: ')+'</b><bdi>documents/technology-presentation.pptx</bdi> — '+t('غير مرفق','not attached')+'</span></div>'}),card({icon:'doc',title:t('عرض نظرة عامة على المشروع','Project overview deck'),c:'var(--h6)',text:t('18 شريحة تتناول المشروع والفريق والمسؤوليات والتنسيق، وأعدّه Bisher.','18 slides covering the project, team, responsibilities and coordination, prepared by Bisher.'),extra:'<div class="wmeta"><span><b>'+t('الحالة: ','Status: ')+'</b>'+t('مكتمل','completed')+'</span><span><b>'+t('الملف المقترح: ','Suggested file: ')+'</b><bdi>documents/project-overview.pptx</bdi> — '+t('غير مرفق','not attached')+'</span></div>'}),card({icon:'book',title:t('العرض الشامل المرفق','The attached full deck'),c:'var(--h4)',text:t('28 شريحة تتناول المشروع والمؤتمر والفريق والتقنيات وإدارة المشروع والمهارات المهنية، وهو المصدر الأساسي لمحتوى الموقع.','28 slides covering the project, conference, team, technologies, project management and professional skills — the main source for this site.'),extra:'<div class="wmeta"><span><b>'+t('الحالة: ','Status: ')+'</b>'+t('مكتمل','completed')+'</span><span><b>'+t('الملف المقترح: ','Suggested file: ')+'</b><bdi>documents/conference-presentation.pptx</bdi> — '+t('غير مرفق','not attached')+'</span></div>'})])})
   +sec({tint:true,idx:'04',kicker:t('المعرض','Gallery'),hue:'var(--h3)',title:t('معرض المعاينات','Preview gallery'),lead:t('صور الشرائح الأصلية غير مرفقة؛ المعروض معاينات تخطيطية أُعيد إنشاؤها من موضوعات الشرائح. مرّر أفقيًا واضغط «تكبير».','Original slide images are not attached; these are schematic previews rebuilt from the slide topics. Scroll horizontally and press “Enlarge”.'),body:'<div class="gallery">'+SLIDES.map(function(s,i){return '<figure>'+slideHTML(i)+'<figcaption><span>'+t(s[2],s[3])+'</span><button class="btn btn--o btn--sm" type="button" data-open="slide'+i+'">'+t('تكبير','Enlarge')+'</button></figcaption></figure>';}).join('')+'</div>'})
@@ -1269,7 +1337,7 @@ PAGES.references=function(){
   +sec({tint:true,idx:'02',kicker:t('تصنيف','Categories'),hue:'var(--h2)',title:t('تصنيف المصادر حسب الموضوع','Sources by topic'),lead:t('روابط لمؤسسات ومنصات معروفة كمصادر تعليمية إضافية مقترحة، وليست ادعاءً بأن الفريق استخدم مرجعًا محددًا منها.','Links to well-known organizations as suggested additional teaching sources, not a claim that the team used a specific reference.'),body:grid(3,cats.map(function(c){return card({icon:c[2],title:t(c[0],c[1]),c:c[3],extra:'<ul class="dots" style="margin-top:var(--s3)">'+c[4].map(function(l){return '<li><a href="'+l[1]+'" target="_blank" rel="noopener noreferrer"><bdi>'+l[0]+'</bdi></a></li>';}).join('')+'</ul>'});}))})
   +sec({idx:'03',kicker:t('أسلوب التوثيق','Citation style'),hue:'var(--h6)',title:t('أسلوب هارفارد ','Harvard referencing ')+'<bdi>Harvard</bdi>',lead:t('للمراجع التي تتوفر بياناتها الكاملة: المؤلف أو المؤسسة، السنة، العنوان، الرابط، وتاريخ الاطلاع.','For references with complete data: author or organization, year, title, link and access date.'),body:'<div class="panel rv"><h3>'+t('الصيغة العامة','General format')+'</h3><p style="margin-top:var(--s3)"><bdi>Author/Organisation (Year) Title. Available at: URL (Accessed: date).</bdi></p><p style="margin-top:var(--s3)">'+t('وعند عدم توفر سنة نشر معروفة تُستخدم (n.d.) بدلًا من اختلاق سنة.','When no known year exists, (n.d.) is used instead of inventing one.')+'</p></div><div style="margin-top:var(--s6)">'+tbl(t('أمثلة توثيق بصيغة هارفارد، تاريخ الاطلاع 24 نوفمبر 2026.','Harvard-style citation examples, accessed 24 November 2026.'),[t('المؤسسة','Organization'),t('السنة','Year'),t('صيغة التوثيق','Citation')],hv.map(function(h){return [L(h[0]),'<span class="tnum">n.d.</span>','<bdi>'+h[0]+' (n.d.) '+h[1]+'. Available at: '+h[2]+' (Accessed: 24 November 2026).</bdi>'];}))+'</div><p class="note" style="margin-top:var(--s5)">'+t('تنبيه: القائمة مراجع مؤسسية عامة مقترحة للتوسع وليست قائمة الفريق الأصلية. ولم تُخترع أسماء أبحاث أو مؤلفين أو سنوات أو روابط.','Note: these are general institutional references for further reading, not the team\u2019s original list. No paper titles, authors, years or links were invented.')+'</p><div class="row"><a class="btn btn--p" href="#/technologies">'+t('مركز التقنيات','Technologies hub')+'</a><a class="btn btn--o" href="#/showcase">'+t('معرض الأعمال','Showcase')+'</a><a class="btn btn--o" href="#/faq">'+t('الأسئلة الشائعة','FAQ')+'</a></div>'});
 };
-var FAQ=[['ما هو فريق IT Professionals؟','What is the IT Professionals team?','فريق من ستة أعضاء تعاونوا على تطوير مشروع تقني لتمثيل شركة OptiTic ضمن مشروع الممارسة المهنية.','Six members who cooperated on a technical project representing OptiTic within the professional practice project.','team'],['ما هو موضوع المشروع؟','What is the project topic?','التقنيات الناشئة والابتكار الرقمي، مع التركيز على التطبيقات العملية والتحول الرقمي وريادة الأعمال الرقمية.','Emerging technologies and digital innovation, focusing on practical applications, transformation and entrepreneurship.','about'],['كم عدد أعضاء الفريق؟','How many members?','ستة أعضاء.','Six members.','team'],['من هو قائد الفريق؟','Who is the team leader?','Bisher، وهو أيضًا منسق المشروع والمقدم الرئيسي.','Bisher, also project coordinator and main presenter.','team'],['ما هي التقنيات التي تناولها المشروع؟','Which technologies?','الذكاء الاصطناعي والواقع الافتراضي وإنترنت الأشياء والروبوتات والحوسبة السحابية.','AI, VR, IoT, robotics and cloud computing.','technologies'],['لماذا اختار الفريق هذه التقنيات؟','Why these technologies?','لارتباطها بالمشكلات اليومية والتطبيقات العملية في الأعمال والتعليم والخدمات.','Because they connect to everyday problems and practical applications in business, education and services.','technologies'],['ما هو التحدي الرئيسي؟','What was the main challenge?','تنسيق البحث والترجمة والتصميم ضمن فترة إعداد محدودة تقارب أربعة أسابيع، مع تنظيم العمل على مراحل.','Coordinating research, translation and design within about four weeks, organized into stages.','project'],['كيف تحقق الفريق من المعلومات؟','How was information verified?','بالبحث في مصادر أكاديمية موثوقة ومراجعة المعلومات وفق المنهجية الموضحة في العرض.','By searching reliable academic sources and reviewing information per the deck\u2019s methodology.','references'],['كيف استُخدم الذكاء الاصطناعي؟','How was AI used?','كأداة مساندة مع مراجعة المحتوى والتحقق وإعادة الصياغة والمحافظة على مسؤولية الأعضاء.','As a supporting tool with review, verification, rewriting and preserved member responsibility.','ai'],['كم تبلغ مدة العرض؟','How long is the presentation?','15 دقيقة تليها 5 دقائق للأسئلة والأجوبة.','15 minutes followed by 5 minutes of Q&A.','conference'],['أين أقيم المؤتمر؟','Where is the conference?','مركز الملك الحسين بن طلال للمؤتمرات في البحر الميت، الأردن.','King Hussein Bin Talal Convention Centre, Dead Sea, Jordan.','conference'],['ما هي الأعمال التي أنجزها الفريق؟','What work was completed?','البحث والترجمة وتنظيم المحتوى والعروض التقديمية وبطاقة الدعوة والتنسيق والتحضير للعرض والأسئلة.','Research, translation, content organization, presentations, the invitation card, coordination and preparation.','showcase'],['ما أهمية العمل الجماعي؟','Why did teamwork matter?','ساعد على توزيع المسؤوليات والاستفادة من المهارات المختلفة ودمج البحث والترجمة والتصميم والتقديم.','It distributed responsibilities, used different skills and merged research, translation, design and presenting.','professional'],['ما هو التطوير المهني المستمر؟','What is CPD?','عملية مستمرة لتطوير المعرفة والمهارات والقدرات المهنية.','An ongoing process of developing knowledge, skills and professional capability.','development'],['كيف أتواصل مع الفريق؟','How do I contact the team?','عبر الهاتف 0780927463، أو البريد mnbisher@gmail.com، أو حساب إنستغرام bi_18_11 — وكلها متاحة في نافذة التواصل وقسم التواصل.','By phone 0780927463, email mnbisher@gmail.com, or Instagram bi_18_11 — all available in the contact panel and contact section.','home']];
+var FAQ=[['ما هو فريق IT Professionals؟','What is the IT Professionals team?','فريق من ستة أعضاء تعاونوا على تطوير مشروع تقني لتمثيل شركة OptiTic ضمن مشروع الممارسة المهنية.','Six members who cooperated on a technical project representing OptiTic within the professional practice project.','team'],['ما هو موضوع المشروع؟','What is the project topic?','التقنيات الناشئة والابتكار الرقمي، مع التركيز على التطبيقات العملية والتحول الرقمي وريادة الأعمال الرقمية.','Emerging technologies and digital innovation, focusing on practical applications, transformation and entrepreneurship.','about'],['كم عدد أعضاء الفريق؟','How many members?','ستة أعضاء.','Six members.','team'],['من هو قائد الفريق؟','Who is the team leader?','Bisher، وهو أيضًا منسق المشروع والمقدم الرئيسي.','Bisher, also project coordinator and main presenter.','team'],['ما هي التقنيات التي تناولها المشروع؟','Which technologies?','الذكاء الاصطناعي والواقع الافتراضي وإنترنت الأشياء والروبوتات والحوسبة السحابية.','AI, VR, IoT, robotics and cloud computing.','technologies'],['لماذا اختار الفريق هذه التقنيات؟','Why these technologies?','لارتباطها بالمشكلات اليومية والتطبيقات العملية في الأعمال والتعليم والخدمات.','Because they connect to everyday problems and practical applications in business, education and services.','technologies'],['ما هو التحدي الرئيسي؟','What was the main challenge?','تنسيق البحث والترجمة والتصميم ضمن فترة إعداد محدودة تقارب أربعة أسابيع، مع تنظيم العمل على مراحل.','Coordinating research, translation and design within about four weeks, organized into stages.','project'],['كيف تحقق الفريق من المعلومات؟','How was information verified?','بالبحث في مصادر أكاديمية موثوقة ومراجعة المعلومات وفق المنهجية الموضحة في العرض.','By searching reliable academic sources and reviewing information per the deck\u2019s methodology.','references'],['كيف استُخدم الذكاء الاصطناعي؟','How was AI used?','كأداة مساندة مع مراجعة المحتوى والتحقق وإعادة الصياغة والمحافظة على مسؤولية الأعضاء.','As a supporting tool with review, verification, rewriting and preserved member responsibility.','ai'],['كم تبلغ مدة العرض؟','How long is the presentation?','15 دقيقة تليها 5 دقائق للأسئلة والأجوبة.','15 minutes followed by 5 minutes of Q&A.','conference'],['أين أقيم المؤتمر؟','Where is the conference?','مركز الملك الحسين بن طلال للمؤتمرات في البحر الميت، الأردن.','King Hussein Bin Talal Convention Centre, Dead Sea, Jordan.','conference'],['ما هي الأعمال التي أنجزها الفريق؟','What work was completed?','البحث والترجمة وتنظيم المحتوى والعروض التقديمية وبطاقة الدعوة والشعار والتنسيق والتحضير للعرض والأسئلة.','Research, translation, content organization, presentations, the invitation card, the logo, coordination and preparation.','showcase'],['ما أهمية العمل الجماعي؟','Why did teamwork matter?','ساعد على توزيع المسؤوليات والاستفادة من المهارات المختلفة ودمج البحث والترجمة والتصميم والتقديم.','It distributed responsibilities, used different skills and merged research, translation, design and presenting.','professional'],['ما هو التطوير المهني المستمر؟','What is CPD?','عملية مستمرة لتطوير المعرفة والمهارات والقدرات المهنية.','An ongoing process of developing knowledge, skills and professional capability.','development'],['كيف أتواصل مع الفريق؟','How do I contact the team?','عبر الهاتف 0780927463، أو البريد mnbisher@gmail.com، أو حساب إنستغرام bi_18_11 — وكلها متاحة في نافذة التواصل وقسم التواصل.','By phone 0780927463, email mnbisher@gmail.com, or Instagram bi_18_11 — all available in the contact panel and contact section.','home']];
 PAGES.faq=function(){
   return phero({eyebrow:t('الأسئلة','Questions'),icon:'help',title:t('الأسئلة الشائعة ','Frequently Asked ')+'<span class="grad">'+t('عن الفريق والمشروع','Questions')+'</span>',lead:t('خمس عشرة إجابة مختصرة. اضغط على السؤال لعرض الإجابة.','Fifteen concise answers. Press a question to reveal the answer.')})
   +sec({idx:'01',kicker:t('الأسئلة','Questions'),hue:'var(--h1)',title:t('كل ما تريد معرفته عن المشروع','Everything about the project'),body:'<div class="faq">'+FAQ.map(function(f,i){return '<details'+(i===0?' open':'')+'><summary><span class="q">'+(i+1)+'</span>'+t(f[0],f[1])+'</summary><div class="a">'+t(f[2],f[3])+' <a href="'+href(f[4])+'">'+label(f[4])+'</a>.</div></details>';}).join('')+'</div><div class="panel panel--t rv" style="text-align:center;margin-top:var(--s6)"><h2>'+t('لم تجد ما تبحث عنه؟','Didn\u2019t find what you need?')+'</h2><p style="margin:var(--s3) auto 0;max-width:70ch">'+t('تصفح صفحات المشروع أو استخدم البحث السريع، أو تواصل مع الفريق مباشرة.','Browse the project pages, use quick search, or contact the team directly.')+'</p><div class="row" style="justify-content:center"><button class="btn btn--p" type="button" data-act="search">'+ico('search')+t('بحث سريع','Quick search')+'</button><button class="btn btn--c" type="button" data-act="contact">'+ico('chat')+t('تواصل معنا','Contact us')+'</button><a class="btn btn--o" href="#/about">'+t('عن المشروع','About')+'</a><a class="btn btn--a" href="#/showcase">'+t('معرض الأعمال','Showcase')+'</a></div></div>'});
@@ -1308,7 +1376,7 @@ function buildDrawer(){
   +'<div class="srow"><div class="sinfo"><b>'+t('اللغة','Language')+'</b><span>'+t('عربي / إنجليزي','Arabic / English')+'</span></div><div class="seg"><button type="button" data-set-lang="ar" aria-pressed="'+(LANG==='ar')+'">عربي</button><button type="button" data-set-lang="en" aria-pressed="'+(LANG==='en')+'">EN</button></div></div>';}
 function buildSettings(){
   $('#setPanel').innerHTML='<h4>'+ico('gear')+t('الإعدادات','Settings')+'</h4>'
-  +'<div class="srow"><div class="sinfo"><b>'+t('الإضاءة','Lighting')+'</b><span>'+t('التحويل بين الفاتح والغامق','Switch light and dark')+'</span></div><div class="seg" role="group" aria-label="'+t('أزرار الإضاءة','Lighting buttons')+'">'+lightButtons(true)+'</div></div>'
+  +'<div class="srow"><div class="sinfo"><b>'+t('الإضاءة','Lighting')+'</b><span>'+t('يتبدّل معها تدرّج الشعار تلقائيًا','The logo gradient follows automatically')+'</span></div><div class="seg" role="group" aria-label="'+t('أزرار الإضاءة','Lighting buttons')+'">'+lightButtons(true)+'</div></div>'
   +'<div class="srow"><div class="sinfo"><b>'+t('اللغة','Language')+'</b><span>'+t('اختر لغة الواجهة','Choose interface language')+'</span></div><div class="seg"><button type="button" data-set-lang="ar" aria-pressed="'+(LANG==='ar')+'">عربي</button><button type="button" data-set-lang="en" aria-pressed="'+(LANG==='en')+'">English</button></div></div>'
   +'<div class="setfoot"><span><bdi>IT Professionals © 2026</bdi></span><span class="kbd">Ctrl + K</span></div>';}
 function buildContact(){
@@ -1348,16 +1416,23 @@ function openViewer(kind){
   var h='',foot='';
   if(kind==='brochure'){$('#vTitle').innerHTML=ico('card')+'<span>'+t('بطاقة الدعوة — تصميم Saed','Invitation card — designed by Saed')+'</span>';h=brochureHTML();
     foot='<button class="btn btn--p btn--sm" type="button" data-dl="brochure-png">'+ico('down')+t('تحميل PNG','Download PNG')+'</button><label class="btn btn--o btn--sm filebtn">'+ico('up')+t('رفع الملف الأصلي','Upload original')+'<input type="file" accept="image/*" data-up="brochure" aria-label="'+t('رفع الملف الأصلي','Upload original')+'"></label>'+(CUSTOM.brochure?'<button class="btn btn--o btn--sm" type="button" data-reset="brochure">'+ico('close')+t('استعادة النسخة المدمجة','Restore built-in')+'</button>':'');
-  }else if(kind==='logo'){$('#vTitle').innerHTML=ico('spark')+'<span>'+t('شعار الفريق','Team logo')+'</span>';
-    h='<div class="logoStage" style="padding:2rem">'+(CUSTOM.logo?'<img src="'+CUSTOM.logo+'" alt="">':logoSVG({lockup:'stack',ink:'#0A1425'}))+'</div>';
-    foot='<button class="btn btn--p btn--sm" type="button" data-dl="logo-png">'+ico('down')+t('تحميل PNG','Download PNG')+'</button><button class="btn btn--o btn--sm" type="button" data-dl="logo-svg">'+ico('down')+t('تحميل SVG','Download SVG')+'</button>';
+  }else if(kind==='logo'){$('#vTitle').innerHTML=ico('spark')+'<span>'+t('شعار الفريق — ITP','Team logo — ITP')+'</span>';
+    h='<div class="logolab"><div class="ll-row"><div class="ll-cell dark"><small>ON NAVY</small><span class="mark" style="width:min(100%,220px);height:auto;aspect-ratio:1">'+logoSVG({mode:'dark',tight:false})+'</span></div>'
+     +'<div class="ll-cell light"><small>ON WHITE</small><span class="mark" style="width:min(100%,220px);height:auto;aspect-ratio:1">'+logoSVG({mode:'light',tight:false})+'</span></div></div>'
+     +'<div class="ll-sizes">'+[32,48,64,96].map(function(s){return '<div class="ll-size"><span class="mark" style="--sz:'+s+'px">'+logoSVG({small:s<=48})+'</span><small class="num">'+s+'px</small></div>';}).join('')+'</div></div>';
+    foot='<button class="btn btn--p btn--sm" type="button" data-dl="logo-png">'+ico('down')+t('PNG 2048×2048','PNG 2048×2048')+'</button><button class="btn btn--o btn--sm" type="button" data-dl="logo-svg">'+ico('down')+t('تحميل SVG','Download SVG')+'</button><button class="btn btn--o btn--sm" type="button" data-dl="logo-small-svg">'+ico('down')+t('نسخة مبسطة','Simplified')+'</button>';
   }else{var i=parseInt(kind.slice(5),10);$('#vTitle').innerHTML=ico('slides')+'<span>'+t(SLIDES[i][2],SLIDES[i][3])+'</span>';h=slideHTML(i);
     foot='<p class="assetnote">'+t('إعادة تمثيل تخطيطية لموضوع الشريحة، وليست لقطة من الملف الأصلي.','A schematic re-representation of the slide topic, not a screenshot of the original.')+'</p>';}
   $('#vHolder').innerHTML=h;$('#vFoot').innerHTML=foot;ZOOM=1;$('#viewer').classList.add('open');document.body.style.overflow='hidden';applyZoom();$('#vClose').focus();}
 function closeViewer(){$('#viewer').classList.remove('open');if(!$('#contactModal').classList.contains('open'))document.body.style.overflow='';}
 
+/* ═════ التصدير: SVG متجهي + PNG شفاف 2048×2048 ═════ */
 function dl(name,url){var a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();document.body.removeChild(a);}
-function logoSource(){return logoSVG({lockup:'stack',ink:'#0A1425'}).replace('<svg ','<svg width="720" height="600" ');}
+function logoExportSVG(small){
+  var s=logoSVG({mode:'dark',small:small,tight:false});
+  return s.replace('<svg ','<svg width="'+(small?512:2048)+'" height="'+(small?512:2048)+'" ');
+}
+function logoLockupSVG(){return logoSVG({lockup:'stack',mode:'light',ink:'#0A1425'}).replace('<svg ','<svg width="720" height="600" ');}
 function rr(x,y,w,h,r,ctx){ctx.beginPath();if(ctx.roundRect){ctx.roundRect(x,y,w,h,r);return;}
   ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);
   ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath();}
@@ -1410,18 +1485,25 @@ function drawBrochure(ctx,W,H){
   ctx.fillStyle='#EAF4FF';s=fitFont(ctx,'ORGANIZED BY OPTITIC',36*u,2.5*u,'700',.35*u);ctx.font='700 '+s+'px Cairo, Tajawal, Arial, sans-serif';tracked(ctx,'ORGANIZED BY OPTITIC',cxp,y+4.2*u,.35*u);
   ctx.strokeStyle='rgba(53,198,245,.7)';ctx.lineWidth=.22*u;ctx.beginPath();ctx.moveTo(14*u,y+3.2*u);ctx.lineTo(26*u,y+3.2*u);ctx.stroke();ctx.beginPath();ctx.moveTo(74*u,y+3.2*u);ctx.lineTo(86*u,y+3.2*u);ctx.stroke();}
 function exportPNG(kind){
-  if(CUSTOM[kind]){var im=new Image();im.onload=function(){try{var c=document.createElement('canvas'),w=kind==='logo'?1200:1600,h=Math.round(w*im.height/im.width);c.width=w;c.height=h;c.getContext('2d').drawImage(im,0,0,w,h);dl(kind==='logo'?'it-professionals-logo.png':'invitation-card.png',c.toDataURL('image/png'));toast(t('تم تجهيز الصورة للتحميل.','Image ready for download.'));}catch(e){toast(t('تعذّر التصدير.','Export failed.'));}};im.onerror=function(){toast(t('تعذّر تجهيز الصورة.','Could not prepare the image.'));};im.src=CUSTOM[kind];return;}
+  if(CUSTOM[kind]){var im0=new Image();im0.onload=function(){try{var c=document.createElement('canvas'),w=kind==='logo'?2048:1600,h=Math.round(w*im0.height/im0.width);c.width=w;c.height=h;c.getContext('2d').drawImage(im0,0,0,w,h);dl(kind==='logo'?'it-professionals-logo.png':'invitation-card.png',c.toDataURL('image/png'));toast(t('تم تجهيز الصورة للتحميل.','Image ready for download.'));}catch(e){toast(t('تعذّر التصدير.','Export failed.'));}};im0.onerror=function(){toast(t('تعذّر تجهيز الصورة.','Could not prepare the image.'));};im0.src=CUSTOM[kind];return;}
   try{var c=document.createElement('canvas'),ctx;
-    if(kind==='logo'){c.width=1440;c.height=1200;ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,1440,1200);
-      var img=new Image();img.onload=function(){ctx.drawImage(img,0,0,1440,1200);dl('it-professionals-logo.png',c.toDataURL('image/png'));toast(t('تم تجهيز الشعار للتحميل.','Logo ready for download.'));};
-      img.onerror=function(){toast(t('تعذّر تجهيز الشعار.','Could not prepare the logo.'));};img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(logoSource());return;}
+    if(kind==='logo'){
+      c.width=2048;c.height=2048;ctx=c.getContext('2d');   /* خلفية شفافة تمامًا */
+      var img=new Image();
+      img.onload=function(){ctx.drawImage(img,0,0,2048,2048);dl('it-professionals-logo-2048.png',c.toDataURL('image/png'));toast(t('تم تحميل الشعار بخلفية شفافة 2048×2048.','Logo downloaded, transparent 2048×2048.'));};
+      img.onerror=function(){toast(t('تعذّر تجهيز الشعار.','Could not prepare the logo.'));};
+      img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(logoExportSVG(false));return;}
     c.width=1600;c.height=2400;ctx=c.getContext('2d');drawBrochure(ctx,1600,2400);dl('invitation-card.png',c.toDataURL('image/png'));toast(t('تم تجهيز بطاقة الدعوة للتحميل.','Invitation card ready for download.'));
   }catch(e){toast(t('تعذّر التصدير في هذا المتصفح.','Export failed in this browser.'));}}
-function exportSVG(){var b=new Blob([logoSource()],{type:'image/svg+xml;charset=utf-8'}),u=URL.createObjectURL(b);dl('it-professionals-logo.svg',u);setTimeout(function(){URL.revokeObjectURL(u);},4000);toast(t('تم تحميل ملف SVG.','SVG file downloaded.'));}
+function exportSVG(kind,small){
+  var src=small?logoExportSVG(true):kind==='lockup'?logoLockupSVG():logoExportSVG(false);
+  var b=new Blob([src],{type:'image/svg+xml;charset=utf-8'}),u=URL.createObjectURL(b);
+  dl(small?'it-professionals-logo-simplified.svg':'it-professionals-logo.svg',u);
+  setTimeout(function(){URL.revokeObjectURL(u);},4000);toast(t('تم تحميل ملف SVG المتجهي.','Vector SVG downloaded.'));}
 function upload(kind,file){
   if(!file||!/^image\//.test(file.type)){toast(t('اختر ملف صورة صالح.','Choose a valid image file.'));return;}
   var fr=new FileReader();
-  fr.onload=function(){var im=new Image();im.onload=function(){var max=kind==='logo'?720:1600,r=Math.min(1,max/Math.max(im.width,im.height));
+  fr.onload=function(){var im=new Image();im.onload=function(){var max=kind==='logo'?1024:1600,r=Math.min(1,max/Math.max(im.width,im.height));
       var c=document.createElement('canvas');c.width=Math.round(im.width*r);c.height=Math.round(im.height*r);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
       var out=c.toDataURL('image/webp',0.92);if(out.indexOf('data:image/webp')!==0)out=c.toDataURL('image/png');
       CUSTOM[kind]=out;try{localStorage.setItem('itp_'+kind,out);}catch(e){}
@@ -1470,7 +1552,9 @@ function setTheme(v,ann){THEME=v;try{localStorage.setItem('itp_theme',v);}catch(
   var th=resolved();root.setAttribute('data-theme',th);
   var mc=document.querySelector('meta[name=theme-color]');if(mc)mc.setAttribute('content',th==='light'?'#F2F5FA':'#080F1E');
   $('#lightTop').innerHTML=lightButtons(false);buildSettings();buildDrawer();
-  var st=$('#logoStage');if(st&&st.classList.contains('onDark')){var tx=st.querySelector('svg text');if(tx)tx.setAttribute('fill','#F4F8FF');}
+  var st=$('#logoStage');
+  if(st){var dark=st.classList.contains('onDark');
+    if(!CUSTOM.logo)st.innerHTML=logoSVG({lockup:'stack',mode:dark?'dark':'light',ink:dark?'#F4F8FF':'#0A1425'});}
   if(ann)toast(th==='light'?t('تم تحويل الإضاءة إلى الوضع الفاتح.','Lighting switched to light mode.'):t('تم تحويل الإضاءة إلى الوضع الغامق.','Lighting switched to dark mode.'));}
 function setLang(v){if(LANG===v)return;LANG=v;try{localStorage.setItem('itp_lang',v);}catch(e){}
   var y=window.scrollY;render(false);window.scrollTo(0,y);
@@ -1487,10 +1571,12 @@ document.addEventListener('click',function(e){
   if((el=hit(e,'button[data-copy]'))){copyText(el.getAttribute('data-copy'));return;}
   if((el=hit(e,'button[data-open]'))){closeDrawer();closeSet();openViewer(el.getAttribute('data-open'));return;}
   if((el=hit(e,'button[data-zoom]'))){var d=parseInt(el.getAttribute('data-zoom'),10);ZOOM=d===0?1:Math.min(3,Math.max(.5,+(ZOOM+d*.25).toFixed(2)));applyZoom();return;}
-  if((el=hit(e,'button[data-dl]'))){var v=el.getAttribute('data-dl');if(v==='logo-svg')exportSVG();else exportPNG(v.split('-')[0]);return;}
+  if((el=hit(e,'button[data-dl]'))){var v=el.getAttribute('data-dl');
+    if(v==='logo-svg')exportSVG('logo',false);else if(v==='logo-small-svg')exportSVG('logo',true);else exportPNG(v.split('-')[0]);return;}
   if((el=hit(e,'button[data-reset]'))){var k=el.getAttribute('data-reset');CUSTOM[k]=null;try{localStorage.removeItem('itp_'+k);}catch(er){}
     var op=$('#viewer').classList.contains('open');render(false);if(op)openViewer(k);toast(t('تمت استعادة النسخة المدمجة.','Built-in version restored.'));return;}
-  if((el=hit(e,'button[data-stage]'))){var g=$('#logoStage');if(g){var mode=el.getAttribute('data-stage');g.classList.toggle('onDark',mode==='dark');var tx=g.querySelector('svg text');if(tx)tx.setAttribute('fill',mode==='dark'?'#F4F8FF':'#0A1425');}return;}
+  if((el=hit(e,'button[data-stage]'))){var g=$('#logoStage');if(g){var mode=el.getAttribute('data-stage');g.classList.toggle('onDark',mode==='dark');
+    if(!CUSTOM.logo)g.innerHTML=logoSVG({lockup:'stack',mode:mode,ink:mode==='dark'?'#F4F8FF':'#0A1425'});}return;}
   if((el=hit(e,'button[data-act]'))){var a=el.getAttribute('data-act');
     if(a==='top')window.scrollTo({top:0,behavior:'smooth'});
     else if(a==='print')window.print();
